@@ -3,25 +3,23 @@ html {
   font-size: 24px; }
 
 body {
-  margin: 0; }
+  margin: 0 auto;
+  max-width: 60%;
+  background-color: #202020; }
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: Poppins, sans-serif; }
 
 h1 {
-  font-size: 5em;
+  font-size: 2.5em;
   color: #FFF;
   margin: 0; }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #FFF;
   margin: 0; }
 
-.banner-bkg {
-  background-color: #475B55;
-  height: 30%;
-  text-align: center; }
-
-.text-outline {
-  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000; }
+.header-wrapper {
+  text-align: left;
+  margin-top: 5%; }
