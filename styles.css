@@ -29,9 +29,12 @@ button {
   border-radius: 15px;
   color: #FFF;
   font-family: Poppins, sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  transition: background-color 0.5s;
+  transition: font-size 0.5s; }
   button:hover {
-    background-color: #2D2D2D; }
+    background-color: #2D2D2D;
+    font-size: 1.2em; }
 
 .flex-row-container {
   display: flex;

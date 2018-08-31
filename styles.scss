@@ -38,9 +38,12 @@ button {
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 1em;
+  transition: background-color 0.5s;
+  transition: font-size 0.5s;
 
   &:hover {
     background-color: #2D2D2D;
+    font-size: 1.2em;
   }
 }
 
