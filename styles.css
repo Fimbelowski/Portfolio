@@ -71,7 +71,11 @@ button {
 
 .image-wrapper {
   width: 100%;
-  background-color: #FFF; }
+  background-color: #FFF;
+  transition: box-shadow, 0.5s; }
+  .image-wrapper:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px -2px #FFF; }
 
 .preview-image {
   max-width: 100%;
