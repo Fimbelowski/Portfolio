@@ -34,6 +34,7 @@ p {
 button {
   display: block;
   width: 100%;
+  max-width: 23%;
   margin: 0;
   background-color: transparent;
   border: none;
@@ -41,8 +42,7 @@ button {
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 1em;
-  transition: background-color 0.5s;
-  transition: font-size 0.5s;
+  transition: background-color 0.5s, font-size 1s;
 
   &:hover {
     background-color: #2D2D2D;
@@ -67,4 +67,29 @@ button {
 
 .main-content-container {
   height: 65%;
+}
+
+.about {
+  display: none;
+}
+
+.projects {
+  height: 100%;
+  width: 100%;
+}
+
+.project-preview {
+  height: 40%;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.image-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #FFF;
 }
