@@ -45,6 +45,7 @@ button {
   transition: background-color 0.5s, font-size 1s;
 
   &:hover {
+    cursor: pointer;
     background-color: #2D2D2D;
     font-size: 1.2em;
   }
