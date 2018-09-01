@@ -70,6 +70,15 @@ button {
   text-align: center; }
 
 .image-wrapper {
-  height: 100%;
   width: 100%;
   background-color: #FFF; }
+
+.preview-image {
+  max-width: 100%;
+  height: auto; }
+
+.title-anchor {
+  text-decoration: none; }
+
+.paragraph-anchor {
+  color: inherit; }
