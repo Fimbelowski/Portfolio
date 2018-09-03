@@ -86,3 +86,24 @@ button {
 
 .paragraph-anchor {
   color: inherit; }
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content-wrapper {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto; }
+
+.modal-exit {
+  font-family: Poppins, sans-serif;
+  color: #FFF;
+  font-size: 2em; }
