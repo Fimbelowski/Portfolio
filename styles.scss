@@ -44,10 +44,16 @@ button {
   font-size: 1em;
   transition: background-color 0.5s, font-size 1s;
 
-  &:hover {
+  &:hover, &:active {
     cursor: pointer;
     background-color: #2D2D2D;
     font-size: 1.2em;
+  }
+
+  &:focus {
+    background-color: #2D2D2D;
+    font-size: 1.2em;
+    outline: none;
   }
 }
 
