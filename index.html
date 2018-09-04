@@ -16,7 +16,8 @@
 <body>
   <div id='v-app'>
     <div class='modal-overlay' :class='{ active: modalActive }'>
-      <div class='modal-content-wrapper'>
+      <div class='modal-content-wrapper flex-row-container'>
+        <img src='whats-wr.png' class='modal-image'>
         <span class='modal-exit' @click='closeModal'>&times</span>
       </div>
     </div>
