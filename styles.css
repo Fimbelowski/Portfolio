@@ -120,4 +120,5 @@ button {
   color: #FFF;
   font-size: 2em; }
   .modal-exit:hover, .modal-exit:focus {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #8C8C8C; }
