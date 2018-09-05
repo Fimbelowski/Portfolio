@@ -47,6 +47,10 @@ button {
   display: flex;
   flex-direction: row; }
 
+.flex-col-container {
+  display: flex;
+  flex-direction: column; }
+
 .header-wrapper {
   text-align: left;
   margin-top: 5%; }
@@ -63,7 +67,8 @@ button {
 
 .projects {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  display: none; }
 
 .project-preview {
   height: 40%;
@@ -126,3 +131,24 @@ button {
   .modal-exit:hover, .modal-exit:focus {
     cursor: pointer;
     color: #8C8C8C; }
+
+.tools {
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap; }
+
+.tool-container {
+  width: 33%;
+  height: 50%;
+  text-align: center; }
+
+.tool-icon-wrapper {
+  flex: 1; }
+
+.tool-icon {
+  object-fit: contain; }
+
+.test {
+  height: 100%;
+  width: auto;
+  background-color: #FFF; }
