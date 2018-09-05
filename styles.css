@@ -142,13 +142,7 @@ button {
   height: 50%;
   text-align: center; }
 
-.tool-icon-wrapper {
-  flex: 1; }
-
 .tool-icon {
+  flex: 1;
+  min-height: 0;
   object-fit: contain; }
-
-.test {
-  height: 100%;
-  width: auto;
-  background-color: #FFF; }
