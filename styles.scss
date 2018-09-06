@@ -94,14 +94,13 @@ button {
   margin-top: 2%;
 }
 
-.about {
+.hidden {
   display: none;
 }
 
 .projects {
   height: 100%;
   width: 100%;
-  display: none;
 }
 
 .project-preview {
@@ -178,7 +177,6 @@ button {
 }
 
 .tools {
-  display: none;
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
