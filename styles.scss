@@ -67,8 +67,15 @@ button {
   flex-direction: column;
 }
 
-.header-wrapper {
+.center-text {
+  text-align: center;
+}
+
+.left-text {
   text-align: left;
+}
+
+.header-wrapper {
   margin-top: 5%;
 }
 
@@ -79,6 +86,12 @@ button {
 
 .main-content-container {
   height: 65%;
+}
+
+.tab-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 2%;
 }
 
 .about {
@@ -95,10 +108,6 @@ button {
   height: 40%;
   width: 55%;
   margin: 0 auto;
-}
-
-.project-title {
-  text-align: center;
 }
 
 .image-wrapper {
@@ -169,6 +178,7 @@ button {
 }
 
 .tools {
+  display: none;
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
@@ -177,11 +187,37 @@ button {
 .tool-container {
   width: 33%;
   height: 50%;
-  text-align: center;
 }
 
 .tool-icon {
   flex: 1;
   min-height: 0;
   object-fit: contain;
+}
+
+.paragraph-container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact-info-container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact-info-row {
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon-anchor {
+  width: 20%;
+  margin-right: 2%;
+}
+
+.contact-icon-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
