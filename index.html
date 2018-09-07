@@ -26,19 +26,19 @@
       <h2>Front End Developer</h2>
     </div>
     <div class='nav-bar flex-row-container'>
-      <button type='button'>About Me</button>
-      <button type='button'>Projects</button>
-      <button type='button'>Tools</button>
-      <button type='button'>Contact</button>
+      <button type='button' @click='updateActiveTab("about")'>About Me</button>
+      <button type='button' @click='updateActiveTab("projects")'>Projects</button>
+      <button type='button' @click='updateActiveTab("tools")'>Tools</button>
+      <button type='button' @click='updateActiveTab("contact")'>Contact</button>
     </div>
     <div class='main-content-container'>
-      <div class='tab-container about'>
+      <div class='tab-container about' :class='{ hidden: activeTab != "about" }'>
         <p>Welcome!</p>
         <p>My name is Chris and I'm a self-taught front end developer who lives in Tempe, Arizona! I like creating unique sites and minimalist User Interfaces.</p>
         <p>I have a very solid skillset including HTML, CSS, Javascript, and plenty of other tools and technologies.</p>
         <p>I am still always looking for new ways to challenge myself and to learn new techniques, tools, and ideas!</p>
       </div>
-      <div class='tab-container projects hidden'>
+      <div class='tab-container projects' :class='{ hidden: activeTab != "projects" }'>
         <div class='project-preview'>
           <a href='https://fimbelowski.github.io/Whats-WR/' target='_blank' class='title-anchor'><h3 class='center-text'>What's World Record?</h3></a>
           <div class='image-wrapper'>
@@ -47,7 +47,7 @@
           <p>"What's WR?" is a site that consumes <a href='https://www.speedrun.com/' target='_blank' class='paragraph-anchor'>speedrun.com</a>'s API in order to find the user a random video game speedrun world record to watch. This site was created using HTML, JavaScript, CSS, Vue.js and SASS.</p>
         </div>
       </div>
-      <div class='tab-container tools flex-row-container hidden'>
+      <div class='tab-container tools flex-row-container' :class='{ hidden: activeTab != "tools" }'>
         <div class='tool-container center-text flex-col-container'>
           <img src='images/html5-logo.png' class='tool-icon'>
           <h3>HTML5</h3>
@@ -73,7 +73,7 @@
           <h3>Atom</h3>
         </div>
       </div>
-      <div class='tab-container center-text contact hidden'>
+      <div class='tab-container center-text contact' :class='{ hidden: activeTab != "contact" }'>
         <h2>Hello there!</h2>
         <div class='paragraph-container left-text'>
           <p>Thank you for taking the time to contact me! You can reach out to me via any of the platforms below!</p>
