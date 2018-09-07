@@ -11,8 +11,10 @@ window.onload = function() {
       openModal: function() {
         this.modalActive = true;
       },
-      closeModal: function() {
-        this.modalActive = false;
+      closeModal: function(event) {
+        if (event.target !== document.getElementById('modal-image')) {
+          this.modalActive = false;
+        }
       },
       updateActiveTab: function(targetTab) {
         this.activeTab = targetTab;
