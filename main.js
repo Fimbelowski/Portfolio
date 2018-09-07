@@ -16,7 +16,7 @@ window.onload = function() {
       },
       updateActiveTab: function(targetTab) {
         this.activeTab = targetTab;
-      }
+      },
     }
   });
 }
