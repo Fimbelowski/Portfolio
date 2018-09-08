@@ -57,6 +57,12 @@ button {
   }
 }
 
+::selection {
+  color: #2D2D2D;
+  background-color: #FFF;
+  outline: none;
+}
+
 .flex-row-container {
   display: flex;
   flex-direction: row;
@@ -152,20 +158,23 @@ button {
 }
 
 .modal-content-wrapper {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: auto;
   margin: 0 auto;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
 }
 
 .modal-image {
   max-width: 100%;
   max-height: 100%;
+  align-self: center;
 }
 
 .modal-exit {
-  float: right;
+  width: 0;
+  height: 0;
+  overflow: visible;
+  margin-left: 2%;
   font-family: $primary-font;
   color: $primary-text-color;
   font-size: 2em;
