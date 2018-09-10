@@ -1,6 +1,14 @@
 $primary-font: Poppins, sans-serif;
 $primary-text-color: #FFF;
 
+$mobile-sm-max-width-portrait: 300px;
+
+@mixin mobile-sm-portrait {
+  @media (max-width: #{$mobile-sm-max-width-portrait}) {
+    @content;
+  }
+}
+
 html {
   height: 100%;
   font-size: 24px;
