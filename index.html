@@ -15,23 +15,23 @@
 
 <body>
   <div id='v-app'>
-    <div class='modal-overlay' :class='{ active: modalActive }' @click='closeModal'>
+    <!-- <div class='modal-overlay' :class='{ active: modalActive }' @click='closeModal'>
       <div class='modal-content-wrapper flex-row-container'>
         <img src='images/whats-wr.png' class='modal-image' id='modal-image'>
         <span class='modal-exit'>&times</span>
       </div>
-    </div>
-    <div class='header-wrapper left-text'>
+    </div> -->
+    <div class='header-wrapper'>
       <h1>Christopher Fimbel</h1>
       <h2>Front End Developer</h2>
     </div>
     <div class='nav-bar flex-row-container'>
-      <button type='button' @click='updateActiveTab("about")'>About Me</button>
+      <!-- <button type='button' @click='updateActiveTab("about")'>About Me</button>
       <button type='button' @click='updateActiveTab("projects")'>Projects</button>
       <button type='button' @click='updateActiveTab("tools")'>Tools</button>
-      <button type='button' @click='updateActiveTab("contact")'>Contact</button>
+      <button type='button' @click='updateActiveTab("contact")'>Contact</button> -->
     </div>
-    <div class='main-content-container'>
+    <!-- <div class='main-content-container'>
       <div class='tab-container about' :class='{ hidden: activeTab != "about" }'>
         <p>Welcome!</p>
         <p>My name is Chris and I'm a self-taught front end developer who lives in Tempe, Arizona! I like creating unique sites and minimalist User Interfaces.</p>
@@ -94,6 +94,6 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>
