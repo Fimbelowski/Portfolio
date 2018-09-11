@@ -1,7 +1,10 @@
 html {
   height: 100%;
   font-size: 24px; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
+    html {
+      font-size: 18px; } }
+  @media (max-width: 530px) and (orientation: landscape) {
     html {
       font-size: 18px; } }
 
@@ -9,7 +12,10 @@ body {
   margin: 0 auto;
   max-width: 60%;
   background-color: #202020; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
+    body {
+      max-width: 96%; } }
+  @media (max-width: 530px) and (orientation: landscape) {
     body {
       max-width: 96%; } }
 
@@ -20,16 +26,22 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-size: 2.5em;
   margin: 0; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
     h1 {
       font-size: 2.4rem; } }
+  @media (max-width: 530px) and (orientation: landscape) {
+    h1 {
+      font-size: 2.6rem; } }
 
 h2 {
   font-size: 1.5em;
   margin: 0; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
     h2 {
       font-size: 1.2rem; } }
+  @media (max-width: 530px) and (orientation: landscape) {
+    h2 {
+      font-size: 1.5rem; } }
 
 p {
   font-size: 1em; }
@@ -46,23 +58,18 @@ button {
   font-family: Poppins, sans-serif;
   font-size: 1em;
   transition: background-color 0.5s, font-size 1s; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
     button {
       max-width: 50%; } }
+  @media (max-width: 530px) and (orientation: landscape) {
+    button {
+      max-width: 24%; } }
   button:hover, button:active {
     cursor: pointer;
-    background-color: #2D2D2D;
-    font-size: 1.2rem; }
-    @media (max-width: 300px) {
-      button:hover, button:active {
-        font-size: 1rem; } }
+    background-color: #2D2D2D; }
   button:focus {
     background-color: #2D2D2D;
-    font-size: 1.2rem;
     outline: none; }
-    @media (max-width: 300px) {
-      button:focus {
-        font-size: 1rem; } }
 
 ::selection {
   color: #2D2D2D;
@@ -85,30 +92,36 @@ button {
 
 .header-wrapper {
   margin-top: 5%; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
     .header-wrapper {
       margin: 0;
       text-align: center;
+      line-height: 1.2; } }
+  @media (max-width: 530px) and (orientation: landscape) {
+    .header-wrapper {
+      margin-top: 1%;
+      text-align: left;
       line-height: 1.2; } }
 
 .nav-bar {
   height: 10%;
   width: 100%;
   justify-content: space-between; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
     .nav-bar {
       height: 20%;
       flex-wrap: wrap; } }
+  @media (max-width: 530px) and (orientation: landscape) {
+    .nav-bar {
+      height: 20%; } }
 
-.main-content-container {
-  height: 65%; }
-  @media (max-width: 300px) {
-    .main-content-container {
-      height: auto; } }
+@media (max-width: 300px) and (orientation: portrait) {
+  .main-content-container {
+    height: auto; } }
 
 .tab-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin-top: 2%; }
 
 .hidden {
@@ -122,20 +135,30 @@ button {
   height: 40%;
   width: 55%;
   margin: 0 auto; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
     .project-preview {
       width: 100%; } }
+  @media (max-width: 530px) and (orientation: landscape) {
+    .project-preview {
+      width: 100%;
+      height: auto; } }
 
 .image-wrapper {
   width: 100%;
-  background-color: #FFF;
+  height: 100%;
   transition: box-shadow, 0.5s; }
+  @media (max-width: 530px) and (orientation: landscape) {
+    .image-wrapper {
+      width: 42%;
+      height: auto;
+      margin: 0 auto; } }
   .image-wrapper:hover {
     cursor: pointer;
     box-shadow: 0 0 20px -2px #FFF; }
 
 .preview-image {
   max-width: 100%;
+  max-height: 100%;
   height: auto; }
 
 .title-anchor {
@@ -191,7 +214,7 @@ button {
 .tool-container {
   width: 33%;
   height: 50%; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
     .tool-container {
       width: 50%; } }
 
@@ -206,14 +229,20 @@ button {
 .paragraph-container {
   width: 40%;
   margin: 0 auto; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
+    .paragraph-container {
+      width: 100%; } }
+  @media (max-width: 530px) and (orientation: landscape) {
     .paragraph-container {
       width: 100%; } }
 
 .contact-info-container {
   width: 40%;
   margin: 0 auto; }
-  @media (max-width: 300px) {
+  @media (max-width: 300px) and (orientation: portrait) {
+    .contact-info-container {
+      width: 100%; } }
+  @media (max-width: 530px) and (orientation: landscape) {
     .contact-info-container {
       width: 100%; } }
 
@@ -221,9 +250,12 @@ button {
   align-items: center;
   justify-content: center; }
 
-.contact-icon-anchor {
+.contact-icon-wrapper {
   width: 20%;
   margin-right: 2%; }
+  @media (max-width: 530px) and (orientation: landscape) {
+    .contact-icon-wrapper {
+      width: 11%; } }
 
 .contact-icon-img {
   display: block;
