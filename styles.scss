@@ -25,7 +25,7 @@ body {
   background-color: #202020;
 
   @include mobile-sm-portrait {
-    max-width: 98%;
+    max-width: 96%;
   }
 }
 
@@ -39,7 +39,7 @@ h1 {
   margin: 0;
 
   @include mobile-sm-portrait {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -69,6 +69,10 @@ button {
   font-size: 1em;
   transition: background-color 0.5s, font-size 1s;
 
+  @include mobile-sm-portrait {
+    max-width: 50%;
+  }
+
   &:hover, &:active {
     cursor: pointer;
     background-color: #2D2D2D;
@@ -79,6 +83,10 @@ button {
     background-color: #2D2D2D;
     font-size: 1.2em;
     outline: none;
+
+    @include mobile-sm-portrait {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -112,6 +120,7 @@ button {
   @include mobile-sm-portrait {
     margin: 0;
     text-align: center;
+    line-height: 1.2;
   }
 }
 
@@ -119,10 +128,19 @@ button {
   height: 10%;
   width: 100%;
   justify-content: space-between;
+
+  @include mobile-sm-portrait {
+    height: 20%;
+    flex-wrap: wrap;
+  }
 }
 
 .main-content-container {
   height: 65%;
+
+  @include mobile-sm-portrait {
+    height: auto;
+  }
 }
 
 .tab-container {
@@ -144,6 +162,10 @@ button {
   height: 40%;
   width: 55%;
   margin: 0 auto;
+
+  @include mobile-sm-portrait {
+    width: 100%;
+  }
 }
 
 .image-wrapper {

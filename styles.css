@@ -11,7 +11,7 @@ body {
   background-color: #202020; }
   @media (max-width: 300px) {
     body {
-      max-width: 98%; } }
+      max-width: 96%; } }
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: Poppins, sans-serif;
@@ -22,7 +22,7 @@ h1 {
   margin: 0; }
   @media (max-width: 300px) {
     h1 {
-      font-size: 2rem; } }
+      font-size: 2.4rem; } }
 
 h2 {
   font-size: 1.5em;
@@ -46,6 +46,9 @@ button {
   font-family: Poppins, sans-serif;
   font-size: 1em;
   transition: background-color 0.5s, font-size 1s; }
+  @media (max-width: 300px) {
+    button {
+      max-width: 50%; } }
   button:hover, button:active {
     cursor: pointer;
     background-color: #2D2D2D;
@@ -54,6 +57,9 @@ button {
     background-color: #2D2D2D;
     font-size: 1.2em;
     outline: none; }
+    @media (max-width: 300px) {
+      button:focus {
+        font-size: 1rem; } }
 
 ::selection {
   color: #2D2D2D;
@@ -79,15 +85,23 @@ button {
   @media (max-width: 300px) {
     .header-wrapper {
       margin: 0;
-      text-align: center; } }
+      text-align: center;
+      line-height: 1.2; } }
 
 .nav-bar {
   height: 10%;
   width: 100%;
   justify-content: space-between; }
+  @media (max-width: 300px) {
+    .nav-bar {
+      height: 20%;
+      flex-wrap: wrap; } }
 
 .main-content-container {
   height: 65%; }
+  @media (max-width: 300px) {
+    .main-content-container {
+      height: auto; } }
 
 .tab-container {
   width: 100%;
@@ -105,6 +119,9 @@ button {
   height: 40%;
   width: 55%;
   margin: 0 auto; }
+  @media (max-width: 300px) {
+    .project-preview {
+      width: 100%; } }
 
 .image-wrapper {
   width: 100%;
