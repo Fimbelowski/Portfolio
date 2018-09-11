@@ -52,10 +52,13 @@ button {
   button:hover, button:active {
     cursor: pointer;
     background-color: #2D2D2D;
-    font-size: 1.2em; }
+    font-size: 1.2rem; }
+    @media (max-width: 300px) {
+      button:hover, button:active {
+        font-size: 1rem; } }
   button:focus {
     background-color: #2D2D2D;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     outline: none; }
     @media (max-width: 300px) {
       button:focus {
@@ -188,6 +191,9 @@ button {
 .tool-container {
   width: 33%;
   height: 50%; }
+  @media (max-width: 300px) {
+    .tool-container {
+      width: 50%; } }
 
 .tool-icon {
   flex: 1;

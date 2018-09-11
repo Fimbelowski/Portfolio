@@ -76,12 +76,16 @@ button {
   &:hover, &:active {
     cursor: pointer;
     background-color: #2D2D2D;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+
+    @include mobile-sm-portrait {
+      font-size: 1rem;
+    }
   }
 
   &:focus {
     background-color: #2D2D2D;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     outline: none;
 
     @include mobile-sm-portrait {
@@ -247,6 +251,10 @@ button {
 .tool-container {
   width: 33%;
   height: 50%;
+
+  @include mobile-sm-portrait {
+    width: 50%;
+  }
 }
 
 .tool-icon {
