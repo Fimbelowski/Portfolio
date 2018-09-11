@@ -270,11 +270,19 @@ button {
 .paragraph-container {
   width: 40%;
   margin: 0 auto;
+
+  @include mobile-sm-portrait {
+    width: 100%;
+  }
 }
 
 .contact-info-container {
   width: 40%;
   margin: 0 auto;
+
+  @include mobile-sm-portrait {
+    width: 100%;
+  }
 }
 
 .contact-info-row {

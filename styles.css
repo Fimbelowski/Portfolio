@@ -206,10 +206,16 @@ button {
 .paragraph-container {
   width: 40%;
   margin: 0 auto; }
+  @media (max-width: 300px) {
+    .paragraph-container {
+      width: 100%; } }
 
 .contact-info-container {
   width: 40%;
   margin: 0 auto; }
+  @media (max-width: 300px) {
+    .contact-info-container {
+      width: 100%; } }
 
 .contact-info-row {
   align-items: center;
