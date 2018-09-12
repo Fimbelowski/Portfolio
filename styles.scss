@@ -4,6 +4,9 @@ $primary-text-color: #FFF;
 $mobile-sm-max-width-portrait: 300px;
 $mobile-sm-max-width-landscape: 530px;
 
+$mobile-md-min-width-portrait: $mobile-sm-max-width-portrait + 1px;
+$mobile-md-max-width-portrait: 360px;
+
 @mixin mobile-sm-portrait {
   @media (max-width: #{$mobile-sm-max-width-portrait}) and (orientation: portrait) {
     @content;
@@ -12,6 +15,12 @@ $mobile-sm-max-width-landscape: 530px;
 
 @mixin mobile-sm-landscape {
   @media (max-width: #{$mobile-sm-max-width-landscape}) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin mobile-md-portrait {
+  @media (min-width: #{$mobile-md-min-width-portrait}) and (max-width: #{$mobile-md-max-width-portrait}) and (orientation: portrait) {
     @content;
   }
 }
@@ -28,6 +37,10 @@ html {
   @include mobile-sm-landscape {
     font-size: 18px;
   }
+
+  @include mobile-md-portrait {
+    font-size: 20px;
+  }
 }
 
 body {
@@ -40,6 +53,10 @@ body {
   }
 
   @include mobile-sm-landscape {
+    max-width: 96%;
+  }
+
+  @include mobile-md-portrait {
     max-width: 96%;
   }
 }
@@ -60,6 +77,10 @@ h1 {
   @include mobile-sm-landscape {
     font-size: 2.6rem;
   }
+
+  @include mobile-md-portrait {
+    font-size: 2.7rem;
+  }
 }
 
 h2 {
@@ -71,6 +92,10 @@ h2 {
   }
 
   @include mobile-sm-landscape {
+    font-size: 1.5rem;
+  }
+
+  @include mobile-md-portrait {
     font-size: 1.5rem;
   }
 }
@@ -98,6 +123,10 @@ button {
 
   @include mobile-sm-landscape {
     max-width: 24%;
+  }
+
+  @include mobile-md-portrait {
+    max-width: 50%;
   }
 
   &:hover, &:active {
@@ -149,6 +178,12 @@ button {
     text-align: left;
     line-height: 1.2;
   }
+
+  @include mobile-md-portrait {
+    margin-top: 2%;
+    text-align: center;
+    line-height: 1.2;
+  }
 }
 
 .nav-bar {
@@ -163,6 +198,11 @@ button {
 
   @include mobile-sm-landscape {
     height: 20%;
+  }
+
+  @include mobile-md-portrait {
+    height: 20%;
+    flex-wrap: wrap;
   }
 }
 
@@ -185,8 +225,8 @@ button {
 }
 
 .projects {
-  height: 100%;
   width: 100%;
+  height: auto;
 }
 
 .project-preview {
@@ -202,6 +242,10 @@ button {
     width: 100%;
     height: auto;
   }
+
+  @include mobile-md-portrait {
+    width: 100%;
+  }
 }
 
 .image-wrapper {
@@ -213,6 +257,11 @@ button {
     width: 42%;
     height: auto;
     margin: 0 auto;
+  }
+
+  @include mobile-md-portrait {
+    width: 100%;
+    height: auto;
   }
 
   &:hover {
@@ -294,6 +343,10 @@ button {
   @include mobile-sm-portrait {
     width: 50%;
   }
+
+  @include mobile-md-portrait {
+    width: 50%;
+  }
 }
 
 .tool-icon {
@@ -317,6 +370,10 @@ button {
   @include mobile-sm-landscape {
     width: 100%;
   }
+
+  @include mobile-md-portrait {
+    width: 100%;
+  }
 }
 
 .contact-info-container {
@@ -330,6 +387,10 @@ button {
   @include mobile-sm-landscape {
     width: 100%;
   }
+
+  @include mobile-md-portrait {
+    width: 100%;
+  }
 }
 
 .contact-info-row {
@@ -338,11 +399,14 @@ button {
 }
 
 .contact-icon-wrapper {
-  width: 20%;
   margin-right: 2%;
 
   @include mobile-sm-landscape {
     width: 11%;
+  }
+
+  @include mobile-md-portrait {
+    width: 10%;
   }
 }
 

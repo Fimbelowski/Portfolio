@@ -7,6 +7,9 @@ html {
   @media (max-width: 530px) and (orientation: landscape) {
     html {
       font-size: 18px; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    html {
+      font-size: 20px; } }
 
 body {
   margin: 0 auto;
@@ -16,6 +19,9 @@ body {
     body {
       max-width: 96%; } }
   @media (max-width: 530px) and (orientation: landscape) {
+    body {
+      max-width: 96%; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
     body {
       max-width: 96%; } }
 
@@ -32,6 +38,9 @@ h1 {
   @media (max-width: 530px) and (orientation: landscape) {
     h1 {
       font-size: 2.6rem; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    h1 {
+      font-size: 2.7rem; } }
 
 h2 {
   font-size: 1.5em;
@@ -40,6 +49,9 @@ h2 {
     h2 {
       font-size: 1.2rem; } }
   @media (max-width: 530px) and (orientation: landscape) {
+    h2 {
+      font-size: 1.5rem; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
     h2 {
       font-size: 1.5rem; } }
 
@@ -64,6 +76,9 @@ button {
   @media (max-width: 530px) and (orientation: landscape) {
     button {
       max-width: 24%; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    button {
+      max-width: 50%; } }
   button:hover, button:active {
     cursor: pointer;
     background-color: #2D2D2D; }
@@ -102,6 +117,11 @@ button {
       margin-top: 1%;
       text-align: left;
       line-height: 1.2; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    .header-wrapper {
+      margin-top: 2%;
+      text-align: center;
+      line-height: 1.2; } }
 
 .nav-bar {
   height: 10%;
@@ -114,6 +134,10 @@ button {
   @media (max-width: 530px) and (orientation: landscape) {
     .nav-bar {
       height: 20%; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    .nav-bar {
+      height: 20%;
+      flex-wrap: wrap; } }
 
 @media (max-width: 300px) and (orientation: portrait) {
   .main-content-container {
@@ -128,8 +152,8 @@ button {
   display: none; }
 
 .projects {
-  height: 100%;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .project-preview {
   height: 40%;
@@ -142,6 +166,9 @@ button {
     .project-preview {
       width: 100%;
       height: auto; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    .project-preview {
+      width: 100%; } }
 
 .image-wrapper {
   width: 100%;
@@ -152,6 +179,10 @@ button {
       width: 42%;
       height: auto;
       margin: 0 auto; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    .image-wrapper {
+      width: 100%;
+      height: auto; } }
   .image-wrapper:hover {
     cursor: pointer;
     box-shadow: 0 0 20px -2px #FFF; }
@@ -217,6 +248,9 @@ button {
   @media (max-width: 300px) and (orientation: portrait) {
     .tool-container {
       width: 50%; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    .tool-container {
+      width: 50%; } }
 
 .tool-icon {
   flex: 1;
@@ -235,6 +269,9 @@ button {
   @media (max-width: 530px) and (orientation: landscape) {
     .paragraph-container {
       width: 100%; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    .paragraph-container {
+      width: 100%; } }
 
 .contact-info-container {
   width: 40%;
@@ -245,17 +282,22 @@ button {
   @media (max-width: 530px) and (orientation: landscape) {
     .contact-info-container {
       width: 100%; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    .contact-info-container {
+      width: 100%; } }
 
 .contact-info-row {
   align-items: center;
   justify-content: center; }
 
 .contact-icon-wrapper {
-  width: 20%;
   margin-right: 2%; }
   @media (max-width: 530px) and (orientation: landscape) {
     .contact-icon-wrapper {
       width: 11%; } }
+  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
+    .contact-icon-wrapper {
+      width: 10%; } }
 
 .contact-icon-img {
   display: block;
