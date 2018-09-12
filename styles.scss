@@ -1,44 +1,44 @@
 $primary-font: Poppins, sans-serif;
 $primary-text-color: #FFF;
 
-$mobile-sm-max-width-portrait: 300px;
-$mobile-sm-max-width-landscape: 530px;
+$mobile-sm-portrait-max-width: 300px;
+$mobile-sm-landscape-max-width: 530px;
 
-$mobile-md-min-width-portrait: $mobile-sm-max-width-portrait + 1px;
-$mobile-md-max-width-portrait: 360px;
+$mobile-md-portrait-min-width: $mobile-sm-portrait-max-width + 1px;
+$mobile-md-portrait-max-width: 360px;
 
-$mobile-md-min-width-landscape: $mobile-sm-max-width-landscape + 1px;
-$mobile-md-max-width-landscape: 640px;
+$mobile-md-landscape-min-width: $mobile-sm-landscape-max-width + 1px;
+$mobile-md-landscape-max-width: 640px;
 
-$mobile-lg-min-width-portrait: $mobile-md-max-width-portrait + 1px;
-$mobile-lg-max-width-portrait: 450px;
+$mobile-lg-portrait-min-width: $mobile-md-portrait-max-width + 1px;
+$mobile-lg-portrait-max-width: 450px;
 
 @mixin mobile-sm-portrait {
-  @media (max-width: #{$mobile-sm-max-width-portrait}) and (orientation: portrait) {
+  @media (max-width: #{$mobile-sm-portrait-max-width}) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin mobile-sm-landscape {
-  @media (max-width: #{$mobile-sm-max-width-landscape}) and (orientation: landscape) {
+  @media (max-width: #{$mobile-sm-landscape-max-width}) and (orientation: landscape) {
     @content;
   }
 }
 
 @mixin mobile-md-portrait {
-  @media (min-width: #{$mobile-md-min-width-portrait}) and (max-width: #{$mobile-md-max-width-portrait}) and (orientation: portrait) {
+  @media (min-width: #{$mobile-md-portrait-min-width}) and (max-width: #{$mobile-md-portrait-max-width}) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin mobile-md-landscape {
-  @media (min-width: #{$mobile-md-min-width-landscape}) and (max-width: #{$mobile-md-max-width-landscape}) and (orientation: landscape) {
+  @media (min-width: #{$mobile-md-landscape-min-width}) and (max-width: #{$mobile-md-landscape-max-width}) and (orientation: landscape) {
     @content;
   }
 }
 
 @mixin mobile-lg-portrait {
-  @media (min-width: #{$mobile-lg-min-width-portrait}) and (max-width: #{$mobile-lg-max-width-portrait}) and (orientation: portrait) {
+  @media (min-width: #{$mobile-lg-portrait-min-width}) and (max-width: #{$mobile-lg-portrait-max-width}) and (orientation: portrait) {
     @content;
   }
 }
