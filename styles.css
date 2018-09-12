@@ -16,6 +16,9 @@ html {
   @media (min-width: 361px) and (max-width: 450px) and (orientation: portrait) {
     html {
       font-size: 21px; } }
+  @media (min-width: 641px) and (max-width: 800px) and (orientation: landscape) {
+    html {
+      font-size: 21px; } }
 
 body {
   margin: 0 auto;
@@ -36,6 +39,9 @@ body {
   @media (min-width: 361px) and (max-width: 450px) and (orientation: portrait) {
     body {
       max-width: 96%; } }
+  @media (min-width: 641px) and (max-width: 800px) and (orientation: landscape) {
+    body {
+      max-width: 97%; } }
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: Poppins, sans-serif;
@@ -59,25 +65,16 @@ h1 {
   @media (min-width: 361px) and (max-width: 450px) and (orientation: portrait) {
     h1 {
       font-size: 3rem; } }
+  @media (min-width: 641px) and (max-width: 800px) and (orientation: landscape) {
+    h1 {
+      font-size: 2.8rem; } }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin: 0; }
   @media (max-width: 300px) and (orientation: portrait) {
     h2 {
       font-size: 1.2rem; } }
-  @media (max-width: 530px) and (orientation: landscape) {
-    h2 {
-      font-size: 1.5rem; } }
-  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
-    h2 {
-      font-size: 1.5rem; } }
-  @media (min-width: 531px) and (max-width: 640px) and (orientation: landscape) {
-    h2 {
-      font-size: 1.5rem; } }
-  @media (min-width: 361px) and (max-width: 450px) and (orientation: portrait) {
-    h2 {
-      font-size: 1.5rem; } }
 
 p {
   font-size: 1em; }
@@ -109,6 +106,9 @@ button {
   @media (min-width: 361px) and (max-width: 450px) and (orientation: portrait) {
     button {
       max-width: 50%; } }
+  @media (min-width: 641px) and (max-width: 800px) and (orientation: landscape) {
+    button {
+      max-width: 24%; } }
   button:hover, button:active {
     cursor: pointer;
     background-color: #2D2D2D; }
@@ -162,6 +162,11 @@ button {
       margin-top: 1%;
       text-align: center;
       line-height: 1.1; } }
+  @media (min-width: 641px) and (max-width: 800px) and (orientation: landscape) {
+    .header-wrapper {
+      margin: 0;
+      text-align: left;
+      line-height: 1.3; } }
 
 .nav-bar {
   height: 10%;
@@ -185,6 +190,9 @@ button {
     .nav-bar {
       height: 15%;
       flex-wrap: wrap; } }
+  @media (min-width: 641px) and (max-width: 800px) and (orientation: landscape) {
+    .nav-bar {
+      height: 15%; } }
 
 .tab-container {
   width: 100%;
@@ -208,13 +216,11 @@ button {
   transition: box-shadow, 0.5s; }
   @media (max-width: 530px) and (orientation: landscape) {
     .image-wrapper {
-      width: 42%;
-      height: auto; } }
-  @media (min-width: 301px) and (max-width: 360px) and (orientation: portrait) {
-    .image-wrapper {
-      width: 100%;
-      height: auto; } }
+      width: 42%; } }
   @media (min-width: 531px) and (max-width: 640px) and (orientation: landscape) {
+    .image-wrapper {
+      width: 50%; } }
+  @media (min-width: 641px) and (max-width: 800px) and (orientation: landscape) {
     .image-wrapper {
       width: 50%; } }
   .image-wrapper:hover {
@@ -323,6 +329,9 @@ button {
   @media (min-width: 361px) and (max-width: 450px) and (orientation: portrait) {
     .contact-icon-wrapper {
       width: 12%; } }
+  @media (min-width: 641px) and (max-width: 800px) and (orientation: landscape) {
+    .contact-icon-wrapper {
+      width: 7%; } }
 
 .contact-icon-img {
   display: block;
