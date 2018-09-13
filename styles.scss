@@ -16,6 +16,9 @@ $mobile-lg-portrait-max-width: 450px;
 $mobile-lg-landscape-min-width: $mobile-md-landscape-max-width + 1px;
 $mobile-lg-landscape-max-width: 800px;
 
+$tablet-sm-portrait-win-width: 768px;
+$tablet-sm-portrait-max-width: 1023px;
+
 @mixin mobile-sm-portrait {
   @media (max-width: #{$mobile-sm-portrait-max-width}) and (orientation: portrait) {
     @content;
@@ -52,6 +55,12 @@ $mobile-lg-landscape-max-width: 800px;
   }
 }
 
+@mixin tablet-sm-portrait {
+  @media (min-width: #{$tablet-sm-portrait-win-width}) and (max-width: #{$tablet-sm-portrait-max-width}) and (orientation: portrait) {
+    @content;
+  }
+}
+
 html {
   height: 100%;
 
@@ -79,6 +88,10 @@ html {
 
   @include mobile-lg-landscape {
     font-size: 21px;
+  }
+
+  @include tablet-sm-portrait {
+    font-size: 27px;
   }
 }
 
@@ -109,6 +122,10 @@ body {
 
   @include mobile-lg-landscape {
     max-width: 97%;
+  }
+
+  @include tablet-sm-portrait {
+    max-width: 96%;
   }
 }
 
@@ -144,6 +161,10 @@ h1 {
   @include mobile-lg-landscape {
     font-size: 2.8rem;
   }
+
+  @include tablet-sm-portrait {
+    font-size: 2.6rem;
+  }
 }
 
 h2 {
@@ -156,7 +177,7 @@ h2 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 button {
@@ -193,6 +214,10 @@ button {
   }
 
   @include mobile-lg-landscape {
+    max-width: 24%;
+  }
+
+  @include tablet-sm-portrait {
     max-width: 24%;
   }
 
@@ -269,6 +294,12 @@ button {
     text-align: left;
     line-height: 1.3;
   }
+
+  @include tablet-sm-portrait {
+    margin-top: 1%;
+    text-align: left;
+    line-height: 1.3;
+  }
 }
 
 .nav-bar {
@@ -302,15 +333,18 @@ button {
   @include mobile-lg-landscape {
     height: 15%;
   }
+
+  @include tablet-sm-portrait {
+    height: 8%;
+  }
 }
 
 .main-content-container {
-
+  flex: 1 0 auto;
 }
 
 .tab-container {
   width: 100%;
-  height: auto;
   margin-top: 2%;
 }
 
@@ -413,7 +447,6 @@ button {
 
 .tools {
   width: 100%;
-  height: 100%;
   flex-wrap: wrap;
 }
 
@@ -480,6 +513,10 @@ button {
 
   @include mobile-lg-landscape {
     width: 7%;
+  }
+
+  @include tablet-sm-portrait {
+    width: 8%;
   }
 }
 
