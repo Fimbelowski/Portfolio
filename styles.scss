@@ -16,8 +16,11 @@ $mobile-lg-portrait-max-width: 450px;
 $mobile-lg-landscape-min-width: $mobile-md-landscape-max-width + 1px;
 $mobile-lg-landscape-max-width: 800px;
 
-$tablet-sm-portrait-win-width: 768px;
+$tablet-sm-portrait-win-width: 600px;
 $tablet-sm-portrait-max-width: 1023px;
+
+$tablet-sm-landscape-min-width: 960px;
+$tablet-sm-landscape-max-width: 1365px;
 
 @mixin mobile-sm-portrait {
   @media (max-width: #{$mobile-sm-portrait-max-width}) and (orientation: portrait) {
@@ -61,6 +64,12 @@ $tablet-sm-portrait-max-width: 1023px;
   }
 }
 
+@mixin tablet-sm-landscape {
+  @media (min-width: #{$tablet-sm-landscape-min-width}) and (max-width: #{$tablet-sm-landscape-max-width}) and (orientation: landscape) {
+    @content;
+  }
+}
+
 html {
   height: 100%;
 
@@ -92,6 +101,10 @@ html {
 
   @include tablet-sm-portrait {
     font-size: 27px;
+  }
+
+  @include tablet-sm-landscape {
+    font-size: 24px;
   }
 }
 
@@ -126,6 +139,10 @@ body {
 
   @include tablet-sm-portrait {
     max-width: 96%;
+  }
+
+  @include tablet-sm-landscape {
+    max-width: 98%;
   }
 }
 
@@ -163,6 +180,10 @@ h1 {
   }
 
   @include tablet-sm-portrait {
+    font-size: 2.6rem;
+  }
+
+  @include tablet-sm-landscape {
     font-size: 2.6rem;
   }
 }
@@ -218,6 +239,10 @@ button {
   }
 
   @include tablet-sm-portrait {
+    max-width: 24%;
+  }
+
+  @include tablet-sm-landscape {
     max-width: 24%;
   }
 
@@ -300,6 +325,12 @@ button {
     text-align: left;
     line-height: 1.3;
   }
+
+  @include tablet-sm-landscape {
+    margin: 0;
+    text-align: left;
+    line-height: 1.3;
+  }
 }
 
 .nav-bar {
@@ -337,6 +368,19 @@ button {
   @include tablet-sm-portrait {
     height: 8%;
   }
+
+  @include tablet-sm-landscape {
+    height: 10%;
+  }
+}
+
+.main-content-container {
+  width: 100%;
+  margin: 0 auto;
+
+  @include tablet-sm-landscape {
+    width: 90%;
+  }
 }
 
 .tab-container {
@@ -373,6 +417,10 @@ button {
 
   @include mobile-lg-landscape {
     width: 50%;
+  }
+
+  @include tablet-sm-landscape {
+    width: 60%;
   }
 
   &:hover {
@@ -512,6 +560,10 @@ button {
   }
 
   @include tablet-sm-portrait {
+    width: 8%;
+  }
+
+  @include tablet-sm-landscape {
     width: 8%;
   }
 }
