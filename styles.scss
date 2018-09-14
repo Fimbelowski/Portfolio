@@ -17,13 +17,16 @@ $mobile-lg-landscape-min-width: $mobile-md-landscape-max-width + 1px;
 $mobile-lg-landscape-max-width: 840px;
 
 $tablet-sm-portrait-win-width: 600px;
-$tablet-sm-portrait-max-width: 1023px;
+$tablet-sm-portrait-max-width: 768px;
 
 $tablet-sm-landscape-min-width: 960px;
-$tablet-sm-landscape-max-width: 1365px;
+$tablet-sm-landscape-max-width: 1024px;
 
 $tablet-lg-portrait-min-width: $tablet-sm-portrait-max-width + 1px;
 $tablet-lg-portrait-max-width: 1280px;
+
+$tablet-lg-landscape-min-width: $tablet-sm-landscape-max-width + 1px;
+// $tablet-lg-landscape-max-width:
 
 @mixin mobile-sm-portrait {
   @media (max-width: #{$mobile-sm-portrait-max-width}) and (orientation: portrait) {
@@ -109,7 +112,7 @@ html {
   }
 
   @include tablet-sm-portrait {
-    font-size: 27px;
+    font-size: 25px;
   }
 
   @include tablet-sm-landscape {
@@ -197,7 +200,7 @@ h1 {
   }
 
   @include tablet-sm-portrait {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 
   @include tablet-sm-landscape {
@@ -348,7 +351,7 @@ button {
   @include tablet-sm-portrait {
     margin-top: 1%;
     text-align: left;
-    line-height: 1.3;
+    line-height: 1.1;
   }
 
   @include tablet-sm-landscape {
@@ -425,7 +428,10 @@ button {
 
 .about {
   margin: 0 auto;
-  width: 75%;
+
+  @include tablet-sm-portrait {
+    width: 90%;
+  }
 }
 
 .hidden {
@@ -600,7 +606,7 @@ button {
   }
 
   @include tablet-sm-portrait {
-    width: 8%;
+    width: 10%;
   }
 
   @include tablet-sm-landscape {
