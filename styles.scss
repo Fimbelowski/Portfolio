@@ -321,7 +321,6 @@ button {
   }
 
   &:focus {
-    background-color: #2D2D2D;
     outline: none;
   }
 }
@@ -468,6 +467,11 @@ button {
   @include desktop {
     height: 8%;
   }
+}
+
+.focused {
+  background-color: #2D2D2D;
+  outline: none;
 }
 
 .main-content-container {

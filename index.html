@@ -26,10 +26,10 @@
       <h2>Front End Developer</h2>
     </div>
     <div class='nav-bar flex-row-container'>
-      <button type='button' @click='updateActiveTab("about")'>About Me</button>
-      <button type='button' @click='updateActiveTab("projects")'>Projects</button>
-      <button type='button' @click='updateActiveTab("tools")'>Tools</button>
-      <button type='button' @click='updateActiveTab("contact")'>Contact</button>
+      <button type='button' @click='updateActiveTab("about")' :class='{ focused: activeTab == "about" }'>About Me</button>
+      <button type='button' @click='updateActiveTab("projects")' :class='{ focused: activeTab == "projects" }'>Projects</button>
+      <button type='button' @click='updateActiveTab("tools")' :class='{ focused: activeTab == "tools" }'>Tools</button>
+      <button type='button' @click='updateActiveTab("contact")' :class='{ focused: activeTab == "contact" }'>Contact</button>
     </div>
     <div class='main-content-container'>
       <div class='tab-container about' :class='{ hidden: activeTab != "about" }'>

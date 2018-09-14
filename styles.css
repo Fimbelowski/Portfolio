@@ -169,7 +169,6 @@ button {
     cursor: pointer;
     background-color: #2D2D2D; }
   button:focus {
-    background-color: #2D2D2D;
     outline: none; }
 
 ::selection {
@@ -286,6 +285,10 @@ button {
   @media (min-width: 1367px) {
     .nav-bar {
       height: 8%; } }
+
+.focused {
+  background-color: #2D2D2D;
+  outline: none; }
 
 .main-content-container {
   width: 100%;
