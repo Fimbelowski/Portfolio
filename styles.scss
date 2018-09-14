@@ -627,10 +627,32 @@ button {
 
   @include mobile-md-portrait {
     width: 50%;
+    height: 210px;
   }
 
   @include mobile-lg-portrait {
     width: 50%;
+    height: 210px;
+  }
+
+  @include tablet-sm-portrait {
+    height: 375px;
+  }
+
+  @include tablet-sm-landscape {
+    height: 260px;
+  }
+
+  @include tablet-lg-portrait {
+    height: 475px;
+  }
+
+  @include tablet-lg-landscape {
+    height: 330px;
+  }
+
+  @include desktop {
+    height: 330px;
   }
 }
 
