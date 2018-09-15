@@ -165,11 +165,18 @@ button {
   @media (min-width: 1367px) {
     button {
       max-width: 24.5%; } }
-  button:hover, button:active {
+  button:hover {
     cursor: pointer;
     background-color: #2D2D2D; }
+  button:active {
+    cursor: pointer;
+    background-color: #404040; }
   button:focus {
     outline: none; }
+
+a {
+  color: #FFF;
+  text-decoration-color: #FFF; }
 
 ::selection {
   color: #2D2D2D;
@@ -356,9 +363,6 @@ button {
 .preview-image {
   max-width: 100%;
   height: auto; }
-
-.paragraph-anchor {
-  color: inherit; }
 
 .modal-overlay {
   display: none;

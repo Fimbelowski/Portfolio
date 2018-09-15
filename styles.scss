@@ -315,14 +315,24 @@ button {
     max-width: 24.5%;
   }
 
-  &:hover, &:active {
+  &:hover {
     cursor: pointer;
     background-color: #2D2D2D;
+  }
+
+  &:active {
+    cursor: pointer;
+    background-color: #404040;
   }
 
   &:focus {
     outline: none;
   }
+}
+
+a {
+  color: $primary-text-color;
+  text-decoration-color: $primary-text-color;
 }
 
 ::selection {
@@ -560,10 +570,6 @@ button {
 .preview-image {
   max-width: 100%;
   height: auto;
-}
-
-.paragraph-anchor {
-  color: inherit;
 }
 
 .modal-overlay {
