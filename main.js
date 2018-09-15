@@ -5,7 +5,9 @@ window.onload = function() {
     el: '#v-app',
     data: {
       modalActive: false,
-      activeTab: 'about'
+      activeTab: 'about',
+      fadeIn: '',
+      fadeOut: ''
     },
     methods: {
       openModal: function() {
@@ -17,8 +19,14 @@ window.onload = function() {
         }
       },
       updateActiveTab: function(targetTab) {
-        this.activeTab = targetTab;
-        this.updateLocationHash(targetTab);
+        // If the tab being activated is already active...
+        if(this.activeTab === targetTab) {
+          // Do nothing
+        } else {
+          // Update the active tab appropriately
+          this.activeTab = targetTab;
+          this.updateLocationHash(targetTab);
+        }
       },
       updateLocationHash: function(newHash) {
         window.location.hash = newHash;

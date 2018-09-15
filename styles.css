@@ -131,7 +131,7 @@ button {
   color: #FFF;
   font-family: Poppins, sans-serif;
   font-size: 1rem;
-  transition: background-color 0.5s; }
+  transition: background-color 0.4s, opacity 0.4s; }
   @media (max-width: 300px) and (orientation: portrait) {
     button {
       max-width: 50%; } }

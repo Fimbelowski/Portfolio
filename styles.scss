@@ -269,7 +269,7 @@ button {
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 1rem;
-  transition: background-color 0.5s;
+  transition: background-color 0.4s, opacity 0.4s;
 
   @include mobile-sm-portrait {
     max-width: 50%;
