@@ -4,6 +4,7 @@ window.onload = function() {
   vm = new Vue({
     el: '#v-app',
     data: {
+      modalImage: '',
       modalActive: false,
       activeButton: '',
       activeTab: '',
@@ -11,7 +12,8 @@ window.onload = function() {
       updateDelay: 200
     },
     methods: {
-      openModal: function() {
+      openModal: function(imagePath) {
+        this.modalImage = imagePath;
         this.modalActive = true;
       },
       closeModal: function(event) {

@@ -17,7 +17,7 @@
     <div id='v-app'>
       <div class='modal-overlay' :class='{ active: modalActive }' @click='closeModal'>
         <div class='modal-content-wrapper flex-row-container'>
-          <img src='images/Whats-WR.png' class='modal-image' id='modal-image' alt='Enlarged Project Preview Image'>
+          <img :src='modalImage' class='modal-image' id='modal-image' alt='Enlarged Project Preview Image'>
           <span class='modal-exit'>&times</span>
         </div>
       </div>
@@ -42,7 +42,7 @@
           <div class='project-preview'>
             <a href='https://fimbelowski.github.io/Whats-WR/' target='_blank'><h3 class='center-text'>What's World Record?</h3></a>
             <div class='image-wrapper'>
-              <img src='images/Whats-WR.png' class='preview-image' @click='openModal' alt="What's WR Preview Image">
+              <img src='images/Whats-WR.png' class='preview-image' @click='openModal("images/Whats-WR.png")' alt="What's WR Preview Image">
             </div>
             <p>"What's WR?" is a site that consumes <a href='https://www.speedrun.com/' target='_blank'>speedrun.com</a>'s API in order to find the user a random video game speedrun world record to watch.</p>
           </div>
@@ -78,7 +78,7 @@
           <div class='paragraph-container center-text'>
             <p>Thank you for taking the time to contact me! You can reach out to me via any of the platforms below.</p>
           </div>
-          <div class='flex-col-container contact-info-container'>
+          <div class='contact-info-container flex-col-container'>
             <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' class='flex-row-container contact-info-row no-decoration'>
               <div class='contact-icon-wrapper'><img src='images/linkedin-icon.png' class='contact-icon-img' alt="Link to Fimbelowski's LinkedIn Profile"></div>
               <h3>Fimbelowski</h3>
