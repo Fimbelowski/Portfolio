@@ -131,7 +131,7 @@ button {
   color: #FFF;
   font-family: Poppins, sans-serif;
   font-size: 1rem;
-  transition: background-color 0.4s, opacity 0.4s; }
+  transition: background-color 0.4s; }
   @media (max-width: 300px) and (orientation: portrait) {
     button {
       max-width: 50%; } }
@@ -299,7 +299,8 @@ a {
 
 .main-content-container {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  transition: opacity 0.2s; }
   @media (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
     .main-content-container {
       width: 90%; } }
@@ -323,7 +324,13 @@ a {
 .about {
   margin: 0 auto; }
 
-.hidden {
+.fade-in {
+  opacity: 1.0; }
+
+.fade-out {
+  opacity: 0.0; }
+
+.inactive {
   display: none; }
 
 .projects {

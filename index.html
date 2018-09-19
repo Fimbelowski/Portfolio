@@ -26,19 +26,19 @@
         <h2>Front End Developer</h2>
       </div>
       <div class='nav-bar flex-row-container'>
-        <button type='button' @click='updateActiveTab("about")' :class='{ focused: activeTab == "about" }'>About Me</button>
-        <button type='button' @click='updateActiveTab("projects")' :class='{ focused: activeTab == "projects" }'>Projects</button>
-        <button type='button' @click='updateActiveTab("tools")' :class='{ focused: activeTab == "tools" }'>Tools</button>
-        <button type='button' @click='updateActiveTab("contact")' :class='{ focused: activeTab == "contact" }'>Contact</button>
+        <button type='button' @click='buttonClicked("about")' :class='{ focused: activeButton === "about" }'>About Me</button>
+        <button type='button' @click='buttonClicked("projects")' :class='{ focused: activeButton === "projects" }'>Projects</button>
+        <button type='button' @click='buttonClicked("tools")' :class='{ focused: activeButton === "tools" }'>Tools</button>
+        <button type='button' @click='buttonClicked("contact")' :class='{ focused: activeButton === "contact" }'>Contact</button>
       </div>
-      <div class='main-content-container'>
-        <div class='tab-container about' :class='{ hidden: activeTab !== "about" }'>
+      <div class='main-content-container' :class='mainContentState'>
+        <div class='tab-container about' :class='{ inactive: activeTab !== "about" }'>
           <p class='center-text'>Welcome!</p>
           <p>My name is Chris and I'm a self-taught front end developer who lives in Tempe, Arizona! I like creating unique sites and minimalist User Interfaces.</p>
           <p>I have a very solid skillset including HTML, CSS, Javascript, and plenty of other tools and technologies.</p>
           <p>I am still always looking for new ways to challenge myself and to learn new techniques, tools, and ideas!</p>
         </div>
-        <div class='tab-container projects' :class='{ hidden: activeTab !== "projects" }'>
+        <div class='tab-container projects' :class='{ inactive: activeTab !== "projects" }'>
           <div class='project-preview'>
             <a href='https://fimbelowski.github.io/Whats-WR/' target='_blank'><h3 class='center-text'>What's World Record?</h3></a>
             <div class='image-wrapper'>
@@ -47,7 +47,7 @@
             <p>"What's WR?" is a site that consumes <a href='https://www.speedrun.com/' target='_blank'>speedrun.com</a>'s API in order to find the user a random video game speedrun world record to watch.</p>
           </div>
         </div>
-        <div class='tab-container tools flex-row-container' :class='{ hidden: activeTab !== "tools" }'>
+        <div class='tab-container tools flex-row-container' :class='{ inactive: activeTab !== "tools" }'>
           <div class='tool-container center-text flex-col-container'>
             <img src='images/html5-logo.png' class='tool-icon' alt='HTML5 Logo'>
             <h3>HTML5</h3>
@@ -73,7 +73,7 @@
             <h3>Atom</h3>
           </a>
         </div>
-        <div class='tab-container center-text contact' :class='{ hidden: activeTab !== "contact" }'>
+        <div class='tab-container center-text contact' :class='{ inactive: activeTab !== "contact" }'>
           <h2>Hello there!</h2>
           <div class='paragraph-container center-text'>
             <p>Thank you for taking the time to contact me! You can reach out to me via any of the platforms below.</p>
