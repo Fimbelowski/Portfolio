@@ -86,7 +86,7 @@ window.onload = function() {
         // Set the hash, active tab, and active button to the default (about)
         this.updateLocationHash('about');
         this.updateActiveButton('about');
-        this.updateActiveButton('about');
+        this.updateActiveTab('about');
       }
     }
   });
