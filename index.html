@@ -73,23 +73,22 @@
             <h3>Atom</h3>
           </a>
         </div>
-        <div class='tab-container contact center-text' :class='{ inactive: activeTab !== "contact" }'>
+        <div class='tab-container flex-col-container contact center-text' :class='{ inactive: activeTab !== "contact" }'>
           <h2>Hello there!</h2>
           <div class='paragraph-container center-text'>
             <p>Thank you for taking the time to contact me! You can reach out to me via any of the platforms below.</p>
           </div>
-          <div class='contact-info-container flex-col-container'>
-            <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' class='flex-row-container contact-info-row no-decoration'>
-              <div class='contact-icon-wrapper'><img src='images/linkedin-icon.png' class='contact-icon-img' alt="Link to Fimbelowski's LinkedIn Profile"></div>
-              <h3>Fimbelowski</h3>
-            </a>
+          <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' class='flex-row-container contact-info-row no-decoration'>
+            <div class='contact-icon-wrapper'><img src='images/linkedin-icon.png' class='contact-icon-img' alt="Link to Fimbelowski's LinkedIn Profile"></div>
+            <h3 class='contact-text'>Fimbelowski</h3>
+          </a>
             <a href='mailto:ChrFimbel@gmail.com' class='flex-row-container contact-info-row no-decoration'>
               <div class='contact-icon-wrapper'><img src='images/email-icon.png' class='contact-icon-img' alt='Link to send an email to Christopher Fimbel'></div>
-              <h3>ChrFimbel@gmail.com</h3>
+              <h3 class='contact-text'>ChrFimbel@gmail.com</h3>
             </a>
             <a href='tel:716-239-0780' class='flex-row-container contact-info-row no-decoration'>
               <div class='contact-icon-wrapper'><img src='images/phone-icon.png' class='contact-icon-img' alt='Telephone Icon'></div>
-              <h3>(716) 239 - 0780</h3>
+              <h3 class='contact-text'>(716) 239 - 0780</h3>
             </a>
           </div>
         </div>

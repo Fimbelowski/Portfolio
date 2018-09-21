@@ -333,6 +333,7 @@ button {
 a {
   color: $primary-text-color;
   text-decoration-color: $primary-text-color;
+  margin: 0;
 }
 
 ::selection {
@@ -681,6 +682,10 @@ a {
   text-decoration: none;
 }
 
+.contact {
+  align-items: center;
+}
+
 .paragraph-container {
   width: 100%;
   margin: 0 auto;
@@ -702,16 +707,39 @@ a {
   }
 }
 
-.contact-info-container {
-  margin: 0 auto;
-}
-
 .contact-info-row {
   align-items: center;
   justify-content: center;
+
+  @include mobile-sm-portrait {
+    margin: 2% 0;
+  }
+
+  @include mobile-sm-landscape {
+    margin: 1% 0;
+  }
+
+  @include mobile-md-portrait {
+    margin: 2% 0;
+  }
+
+  @include mobile-md-landscape {
+    margin: 1% 0;
+  }
+
+  @include mobile-lg-portrait {
+    margin: 2% 0;
+  }
+
+  @include mobile-lg-landscape {
+    margin: 1% 0;
+  }
+
+  margin: 2% 0;
 }
 
 .contact-icon-wrapper {
+  display: inline-block;
   margin-right: 2%;
 
   @include mobile-sm-portrait {
@@ -719,7 +747,7 @@ a {
   }
 
   @include mobile-sm-landscape {
-    width: 11%;
+    width: 13%;
   }
 
   @include mobile-md-portrait {
@@ -727,7 +755,7 @@ a {
   }
 
   @include mobile-md-landscape {
-    width: 8%;
+    width: 12%;
   }
 
   @include mobile-lg-portrait {
@@ -735,28 +763,28 @@ a {
   }
 
   @include mobile-lg-landscape {
-    width: 7%;
+    width: 12%;
   }
 
   @include tablet-sm-portrait {
-    width: 10%;
+    width: 14%;
   }
 
   @include tablet-sm-landscape {
-    width: 8%;
+    width: 13%;
   }
 
   @include tablet-lg-portrait {
-    width: 9%;
+    width: 16%;
   }
 
   @include tablet-lg-landscape {
-    width: 6%;
+    width: 16%;
   }
 
   @include desktop {
-    width: 5%;
-    margin-right: 1%;
+    width: 16%;
+    margin-right: 3%;
   }
 }
 
@@ -765,4 +793,9 @@ a {
   width: 100%;
   height: auto;
   margin: 0;
+}
+
+.contact-text {
+  display: inline-block;
+  margin: auto 0;
 }
