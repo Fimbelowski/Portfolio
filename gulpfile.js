@@ -4,21 +4,35 @@ var cleanCSS = require('gulp-clean-css');
 
 var imagemin = require('gulp-imagemin');
 
+var minify = require('gulp-minify');
+
 gulp.task('sass', function() {
-  return gulp.src('./scss/*.scss')
+  return gulp.src('src/scss/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(cleanCSS())
-  .pipe(gulp.dest('./css'));
+  .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('sass:watch', function() {
-  gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch('src/scss/*.scss', ['sass']);
 });
 
 gulp.task('images', function() {
-  gulp.src('images/*')
+  gulp.src('src/images/*')
   .pipe(imagemin())
-  .pipe(gulp.dest('images'));
+  .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('default', ['sass', 'images']);
+gulp.task('js', function() {
+  gulp.src('src/js/*.js')
+  .pipe(minify())
+  .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('js:watch', function() {
+  gulp.watch('src/js/*.js', ['js']);
+});
+
+gulp.task('watch', ['sass:watch', 'js:watch']);
+
+gulp.task('default', ['sass', 'images', 'js']);
