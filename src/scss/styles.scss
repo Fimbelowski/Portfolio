@@ -703,24 +703,23 @@ a {
   }
 }
 
-.contact-info-container {
-  margin: 0 auto;
-}
-
 .contact-info-row {
+  display: inline-flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
 .contact-icon-wrapper {
   margin-right: 2%;
+  display: inline-block;
 
   @include mobile-sm-portrait {
     width: 13%;
   }
 
   @include mobile-sm-landscape {
-    width: 11%;
+    width: 14%;
   }
 
   @include mobile-md-portrait {
@@ -728,36 +727,37 @@ a {
   }
 
   @include mobile-md-landscape {
-    width: 8%;
+    width: 14%;
   }
 
   @include mobile-lg-portrait {
-    width: 12%;
+    width: 14%;
   }
 
   @include mobile-lg-landscape {
-    width: 7%;
+    width: 14%;
   }
 
   @include tablet-sm-portrait {
-    width: 10%;
+    width: 16%;
   }
 
   @include tablet-sm-landscape {
-    width: 8%;
+    width: 15%;
   }
 
   @include tablet-lg-portrait {
-    width: 9%;
+    width: 18%;
+    margin-right: 3%;
   }
 
   @include tablet-lg-landscape {
-    width: 6%;
+    width: 16%;
   }
 
   @include desktop {
-    width: 5%;
-    margin-right: 1%;
+    width: 16%;
+    margin-right: 2%;
   }
 }
 
@@ -766,4 +766,8 @@ a {
   width: 100%;
   height: auto;
   margin: 0;
+}
+
+.contact-text {
+  display: inline-block;
 }
