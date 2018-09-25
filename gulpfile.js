@@ -25,7 +25,7 @@ gulp.task('images', function() {
 
 gulp.task('js', function() {
   gulp.src('src/js/*.js')
-  .pipe(minify())
+  .pipe(minify({ noSource: true }))
   .pipe(gulp.dest('dist/js'));
 });
 
