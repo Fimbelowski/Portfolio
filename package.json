@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Fimbelowski/Portfolio-Site#readme",
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.10.0",
     "gulp-imagemin": "^4.1.0",

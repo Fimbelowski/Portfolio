@@ -6,6 +6,8 @@ var imagemin = require('gulp-imagemin');
 
 var minify = require('gulp-minify');
 
+var del = require('del');
+
 gulp.task('sass', function() {
   return gulp.src('src/scss/*.scss')
   .pipe(sass().on('error', sass.logError))
@@ -31,6 +33,10 @@ gulp.task('js', function() {
 
 gulp.task('js:watch', function() {
   gulp.watch('src/js/*.js', ['js']);
+});
+
+gulp.task('clean', function() {
+  del(['*', '!dist/**', '!index.html']);
 });
 
 gulp.task('watch', ['sass:watch', 'js:watch']);
