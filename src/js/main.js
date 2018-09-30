@@ -9,7 +9,7 @@ window.onload = function() {
       activeButton: '',
       activeTab: '',
       mainContentState: 'fade-in',
-      updateDelay: 200
+      updateDelay: 100
     },
     methods: {
       openModal: function(imagePath) {
