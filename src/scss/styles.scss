@@ -269,7 +269,7 @@ button {
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 1rem;
-  transition: background-color 0.4s;
+  transition: border 0.4s;
 
   @include mobile-sm-portrait {
     max-width: 50%;
@@ -317,7 +317,9 @@ button {
 
   &:hover {
     cursor: pointer;
-    background-color: #2D2D2D;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFF;
   }
 
   &:active {
@@ -480,7 +482,8 @@ a {
 }
 
 .focused {
-  background-color: #2D2D2D;
+  background-color: #FFF;
+  color: #202020;
   outline: none;
 }
 
