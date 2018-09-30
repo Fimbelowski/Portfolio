@@ -63,7 +63,7 @@ window.onload = function() {
 
         if(hash === 'about' ||
            hash === 'projects' ||
-           hash === 'tools' ||
+           hash === 'skills' ||
            hash === 'contact') {
              return true;
            } else {

@@ -29,7 +29,7 @@
       <div class='nav-bar flex-row-container'>
         <button type='button' @click='buttonClicked("about")' :class='{ focused: activeButton === "about" }'>About Me</button>
         <button type='button' @click='buttonClicked("projects")' :class='{ focused: activeButton === "projects" }'>Projects</button>
-        <button type='button' @click='buttonClicked("tools")' :class='{ focused: activeButton === "tools" }'>Tools</button>
+        <button type='button' @click='buttonClicked("skills")' :class='{ focused: activeButton === "skills" }'>Skills</button>
         <button type='button' @click='buttonClicked("contact")' :class='{ focused: activeButton === "contact" }'>Contact</button>
       </div>
       <div class='main-content-container' :class='mainContentState'>
@@ -48,7 +48,7 @@
             <p>"What's WR?" is a site that consumes <a href='https://www.speedrun.com/' target='_blank'>speedrun.com</a>'s API in order to find the user a random video game speedrun world record to watch.</p>
           </div>
         </div>
-        <div class='tab-container tools flex-row-container' :class='{ inactive: activeTab !== "tools" }'>
+        <div class='tab-container skills flex-row-container' :class='{ inactive: activeTab !== "skills" }'>
           <div class='tool-container center-text flex-col-container'>
             <img src='dist/images/html5-logo.png' class='tool-icon' alt='HTML5 Logo'>
             <h3>HTML5</h3>
