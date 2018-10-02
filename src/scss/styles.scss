@@ -260,16 +260,17 @@ p {
 }
 
 button {
+  $border-width: 3px;
   display: block;
   width: 100%;
   margin: 0;
   background-color: transparent;
-  border: none;
+  border: $border-width solid #FFF;
   border-radius: 15px;
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 1rem;
-  transition: border 0.4s;
+  transition: font-size 0.3s, background-color 0.3s, color 0.3s;
 
   @include mobile-sm-portrait {
     max-width: 50%;
@@ -317,9 +318,7 @@ button {
 
   &:hover {
     cursor: pointer;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #FFF;
+    font-size: 1.2rem;
   }
 
   &:active {
