@@ -289,20 +289,21 @@ p {
 }
 
 button {
-  $border-width: 3px;
   display: block;
   width: 100%;
   margin: 0;
   background-color: transparent;
-  border: $border-width solid #FFF;
+  border: 1px solid #FFF;
   border-radius: 15px;
   color: $primary-text-color;
   font-family: $primary-font;
   font-size: 1rem;
+  font-weight: lighter;
   transition: font-size 0.3s, background-color 0.3s, color 0.3s;
 
   @include mobile-sm-portrait {
-    max-width: 50%;
+    max-width: 49.5%;
+    margin-bottom: 1%;
   }
 
   @include mobile-sm-landscape {
@@ -310,7 +311,8 @@ button {
   }
 
   @include mobile-md-portrait {
-    max-width: 50%;
+    max-width: 49.5%;
+    margin-bottom: 1%;
   }
 
   @include mobile-md-landscape {
@@ -318,7 +320,8 @@ button {
   }
 
   @include mobile-lg-portrait {
-    max-width: 50%;
+    max-width: 49.5%;
+    margin-bottom: 1%;
   }
 
   @include mobile-lg-landscape {
@@ -347,7 +350,10 @@ button {
 
   &:hover {
     cursor: pointer;
-    font-size: 1.2rem;
+
+    @include desktop {
+      font-size: 1.2rem;
+    }
   }
 
   &:active {
@@ -502,8 +508,13 @@ a {
 
 .focused {
   background-color: #FFF;
+  font-weight: normal;
   color: #202020;
   outline: none;
+
+  @include desktop {
+    font-size: 1.2rem;
+  }
 }
 
 .main-content-container {
