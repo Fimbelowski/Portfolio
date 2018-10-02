@@ -202,56 +202,85 @@ h1 {
   margin: 0;
 
   @include mobile-sm-portrait {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
   }
 
   @include mobile-sm-landscape {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
   }
 
   @include mobile-md-portrait {
-    font-size: 2.7rem;
+    font-size: 1.6rem;
   }
 
   @include mobile-md-landscape {
-    font-size: 2.8rem;
+    font-size: 1.7rem;
   }
 
   @include mobile-lg-portrait {
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
 
   @include mobile-lg-landscape {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
   }
 
   @include tablet-sm-portrait {
-    font-size: 3rem;
+    font-size: 1.9rem;
   }
 
   @include tablet-sm-landscape {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
 
   @include tablet-lg-portrait {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
 
   @include tablet-lg-landscape {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
 
   @include desktop {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 }
 
 h2 {
   font-size: 1.5rem;
+  font-weight: lighter;
   margin: 0;
 
   @include mobile-sm-portrait {
     font-size: 1.2rem;
+  }
+
+  @include mobile-md-portrait {
+    font-size: 1.2rem;
+  }
+
+  @include mobile-md-landscape {
+    font-size: 1.3rem;
+  }
+
+  @include mobile-lg-portrait {
+    font-size: 1.3rem;
+  }
+
+  @include mobile-lg-landscape {
+    font-size: 1.3rem;
+  }
+
+  @include tablet-sm-portrait {
+    font-size: 1.5rem;
+  }
+
+  @include tablet-sm-landscape {
+    font-size: 1.5rem;
+  }
+
+  @include tablet-lg-portrait {
+    font-size: 1.6rem;
   }
 }
 
@@ -361,69 +390,60 @@ a {
 }
 
 .header-wrapper {
+  text-align: center;
+
   @include mobile-sm-portrait {
-    margin: 0;
-    text-align: center;
-    line-height: 1.2;
+    padding: 7% 0;
+    line-height: 1.3;
   }
 
   @include mobile-sm-landscape {
-    margin-top: 1%;
-    text-align: left;
-    line-height: 1.2;
+    padding: 4% 0;
+    line-height: 1.3;
   }
 
   @include mobile-md-portrait {
-    margin-top: 2%;
-    text-align: center;
-    line-height: 1.2;
+    padding: 7% 0;
+    line-height: 1.3;
   }
 
   @include mobile-md-landscape {
-    margin: 0;
-    text-align: left;
+    padding: 3% 0;
     line-height: 1.35;
   }
 
   @include mobile-lg-portrait {
-    margin-top: 1%;
-    text-align: center;
-    line-height: 1.1;
+    padding: 6% 0;
+    line-height: 1.3;
   }
 
   @include mobile-lg-landscape {
-    margin: 0;
-    text-align: left;
+    padding: 3% 0;
     line-height: 1.3;
   }
 
   @include tablet-sm-portrait {
-    margin-top: 1%;
-    text-align: left;
+    padding: 4% 0;
     line-height: 1.3;
   }
 
   @include tablet-sm-landscape {
-    margin: 0;
-    text-align: left;
+    padding: 3% 0;
     line-height: 1.3;
   }
 
   @include tablet-lg-portrait {
-    margin-top: 1%;
-    text-align: left;
+    padding: 5% 0;
     line-height: 1.3;
   }
 
   @include tablet-lg-landscape {
-    margin-top: 0.5%;
-    text-align: left;
+    padding: 3% 0;
     line-height: 1.3;
   }
 
   @include desktop {
-    margin: 0;
-    text-align: left;
+    padding: 3% 0;
     line-height: 1.3;
   }
 }
