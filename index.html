@@ -22,97 +22,93 @@
           <span class='modal-exit'>&times</span>
         </div>
       </div>
-      <div class='header-wrapper'>
+      <header class='header-wrapper'>
         <h1>Christopher Fimbel</h1>
         <h2>Front End Developer</h2>
+      </header>
+      <hr>
+      <!-- About Me -->
+      <section class='about'>
+        <h3>About Me</h3>
+        <p>My name is Chris and I'm a self-taught front end developer who lives in Tempe, Arizona! I like creating unique sites and minimalist User Interfaces.</p>
+        <p>I have a very solid skillset including HTML, CSS, Javascript, and plenty of other tools and technologies.</p>
+        <p>I am still always looking for new ways to challenge myself and to learn new techniques, tools, and ideas!</p>
+      </section>
+      <hr>
+      <!-- Projects -->
+      <!-- <div class='projects'>
+        <div class='project-preview'>
+          <a href='https://fimbelowski.github.io/Whats-WR/' target='_blank'><h3 class='center-text'>What's WR?</h3></a>
+          <div class='image-wrapper'>
+            <img src='dist/images/Whats-WR.png' class='preview-image' @click='openModal("dist/images/Whats-WR.png")' alt="What's WR Preview Image">
+          </div>
+          <p>"What's WR?" is a site that consumes <a href='https://www.speedrun.com/' target='_blank'>speedrun.com</a>'s API in order to find the user a random video game speedrun world record to watch.</p>
+        </div>
+      </div> -->
+      <!-- <div class='skills flex-row-container'>
+        <div class='tool-container center-text flex-col-container'>
+          <img src='dist/images/html5-logo.png' class='tool-icon' alt='HTML5 Logo'>
+          <h3>HTML5</h3>
+        </div>
+        <div class='tool-container center-text flex-col-container'>
+          <img src='dist/images/css3-logo.png' class='tool-icon' alt='CSS3 Logo'>
+          <h3>CSS3</h3>
+        </div>
+        <div class='tool-container center-text flex-col-container'>
+          <img src='dist/images/javascript-logo.png' class='tool-icon' alt='JavaScript Logo'>
+          <h3>JavaScript</h3>
+        </div>
+        <a href='https://vuejs.org' target='_blank' class='tool-container flex-col-container center-text no-decoration'>
+          <img src='dist/images/vue-js-logo.png' class='tool-icon' alt='Vue.js Logo'>
+          <h3>Vue.js</h3>
+        </a>
+        <a href='https://sass-lang.com' target='_blank' class='tool-container center-text flex-col-container no-decoration'>
+          <img src='dist/images/sass-logo.png' class='tool-icon' alt='SASS Logo'>
+          <h3>SASS</h3>
+        </a>
+        <a href='https://gulpjs.com/' target='_blank' class='tool-container center-text flex-col-container no-decoration'>
+          <img src='dist/images/gulp-logo.png' class='tool-icon' alt='Gulp Logo'>
+          <h3>Gulp</h3>
+        </a>
+        <a href='https://atom.io' target='_blank' class='tool-container center-text flex-col-container no-decoration'>
+          <img src='dist/images/atom-logo.png' class='tool-icon' alt='Atom Logo'>
+          <h3>Atom</h3>
+        </a>
+        <a href='https://www.adobe.com/products/photoshop.html' target='_blank' class='tool-container center-text flex-col-container no-decoration'>
+          <img src='dist/images/photoshop-logo.png' class='tool-icon' alt='Photoshop Logo'>
+          <h3>Photoshop</h3>
+        </a>
       </div>
-      <div class='nav-bar flex-row-container'>
-        <button type='button' @click='buttonClicked("about")' :class='{ focused: activeButton === "about" }'>About Me</button>
-        <button type='button' @click='buttonClicked("projects")' :class='{ focused: activeButton === "projects" }'>Projects</button>
-        <button type='button' @click='buttonClicked("skills")' :class='{ focused: activeButton === "skills" }'>Skills</button>
-        <button type='button' @click='buttonClicked("contact")' :class='{ focused: activeButton === "contact" }'>Contact</button>
-      </div>
-      <div class='main-content-container' :class='mainContentState'>
-        <div class='tab-container about' :class='{ inactive: activeTab !== "about" }'>
-          <p class='center-text'>Welcome!</p>
-          <p>My name is Chris and I'm a self-taught front end developer who lives in Tempe, Arizona! I like creating unique sites and minimalist User Interfaces.</p>
-          <p>I have a very solid skillset including HTML, CSS, Javascript, and plenty of other tools and technologies.</p>
-          <p>I am still always looking for new ways to challenge myself and to learn new techniques, tools, and ideas!</p>
+      <div class='center-text'>
+        <h2>Hello there!</h2>
+        <div class='paragraph-container center-text'>
+          <p>Thank you for taking the time to contact me! You can reach out to me via any of the platforms below.</p>
         </div>
-        <div class='tab-container projects' :class='{ inactive: activeTab !== "projects" }'>
-          <div class='project-preview'>
-            <a href='https://fimbelowski.github.io/Whats-WR/' target='_blank'><h3 class='center-text'>What's WR?</h3></a>
-            <div class='image-wrapper'>
-              <img src='dist/images/Whats-WR.png' class='preview-image' @click='openModal("dist/images/Whats-WR.png")' alt="What's WR Preview Image">
-            </div>
-            <p>"What's WR?" is a site that consumes <a href='https://www.speedrun.com/' target='_blank'>speedrun.com</a>'s API in order to find the user a random video game speedrun world record to watch.</p>
-          </div>
-        </div>
-        <div class='tab-container skills flex-row-container' :class='{ inactive: activeTab !== "skills" }'>
-          <div class='tool-container center-text flex-col-container'>
-            <img src='dist/images/html5-logo.png' class='tool-icon' alt='HTML5 Logo'>
-            <h3>HTML5</h3>
-          </div>
-          <div class='tool-container center-text flex-col-container'>
-            <img src='dist/images/css3-logo.png' class='tool-icon' alt='CSS3 Logo'>
-            <h3>CSS3</h3>
-          </div>
-          <div class='tool-container center-text flex-col-container'>
-            <img src='dist/images/javascript-logo.png' class='tool-icon' alt='JavaScript Logo'>
-            <h3>JavaScript</h3>
-          </div>
-          <a href='https://vuejs.org' target='_blank' class='tool-container flex-col-container center-text no-decoration'>
-            <img src='dist/images/vue-js-logo.png' class='tool-icon' alt='Vue.js Logo'>
-            <h3>Vue.js</h3>
-          </a>
-          <a href='https://sass-lang.com' target='_blank' class='tool-container center-text flex-col-container no-decoration'>
-            <img src='dist/images/sass-logo.png' class='tool-icon' alt='SASS Logo'>
-            <h3>SASS</h3>
-          </a>
-          <a href='https://gulpjs.com/' target='_blank' class='tool-container center-text flex-col-container no-decoration'>
-            <img src='dist/images/gulp-logo.png' class='tool-icon' alt='Gulp Logo'>
-            <h3>Gulp</h3>
-          </a>
-          <a href='https://atom.io' target='_blank' class='tool-container center-text flex-col-container no-decoration'>
-            <img src='dist/images/atom-logo.png' class='tool-icon' alt='Atom Logo'>
-            <h3>Atom</h3>
-          </a>
-          <a href='https://www.adobe.com/products/photoshop.html' target='_blank' class='tool-container center-text flex-col-container no-decoration'>
-            <img src='dist/images/photoshop-logo.png' class='tool-icon' alt='Photoshop Logo'>
-            <h3>Photoshop</h3>
+        <div id='github'>
+          <a href='https://github.com/Fimbelowski' target='_blank' class='contact-info-row no-decoration'>
+            <div class='contact-icon-wrapper'><img src='dist/images/github-icon.png' class='contact-icon-img' alt="Link to Fimbelowski's LinkedIn Profile"></div>
+            <h3 class='contact-text'>Fimbelowski</h3>
           </a>
         </div>
-        <div class='tab-container center-text' :class='{ inactive: activeTab !== "contact" }'>
-          <h2>Hello there!</h2>
-          <div class='paragraph-container center-text'>
-            <p>Thank you for taking the time to contact me! You can reach out to me via any of the platforms below.</p>
-          </div>
-          <div id='github'>
-            <a href='https://github.com/Fimbelowski' target='_blank' class='contact-info-row no-decoration'>
-              <div class='contact-icon-wrapper'><img src='dist/images/github-icon.png' class='contact-icon-img' alt="Link to Fimbelowski's LinkedIn Profile"></div>
-              <h3 class='contact-text'>Fimbelowski</h3>
-            </a>
-          </div>
-          <div id='linked-in'>
-            <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' class='contact-info-row no-decoration'>
-              <div class='contact-icon-wrapper'><img src='dist/images/linkedin-icon.png' class='contact-icon-img' alt="Link to Fimbelowski's LinkedIn Profile"></div>
-              <h3 class='contact-text'>Fimbelowski</h3>
-            </a>
-          </div>
-          <div id='email'>
-            <a href='mailto:ChrFimbel@gmail.com' class='contact-info-row no-decoration'>
-              <div class='contact-icon-wrapper'><img src='dist/images/email-icon.png' class='contact-icon-img' alt='Link to send an email to Christopher Fimbel'></div>
-              <h3 class='contact-text'>ChrFimbel@gmail.com</h3>
-            </a>
-          </div>
-          <div id='telephone'>
-            <a href='tel:716-239-0780' class='contact-info-row no-decoration'>
-              <div class='contact-icon-wrapper'><img src='dist/images/phone-icon.png' class='contact-icon-img' alt='Telephone Icon'></div>
-              <h3 class='contact-text'>(716) 239 - 0780</h3>
-            </a>
-          </div>
+        <div id='linked-in'>
+          <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' class='contact-info-row no-decoration'>
+            <div class='contact-icon-wrapper'><img src='dist/images/linkedin-icon.png' class='contact-icon-img' alt="Link to Fimbelowski's LinkedIn Profile"></div>
+            <h3 class='contact-text'>Fimbelowski</h3>
+          </a>
         </div>
-      </div>
+        <div id='email'>
+          <a href='mailto:ChrFimbel@gmail.com' class='contact-info-row no-decoration'>
+            <div class='contact-icon-wrapper'><img src='dist/images/email-icon.png' class='contact-icon-img' alt='Link to send an email to Christopher Fimbel'></div>
+            <h3 class='contact-text'>ChrFimbel@gmail.com</h3>
+          </a>
+        </div>
+        <div id='telephone'>
+          <a href='tel:716-239-0780' class='contact-info-row no-decoration'>
+            <div class='contact-icon-wrapper'><img src='dist/images/phone-icon.png' class='contact-icon-img' alt='Telephone Icon'></div>
+            <h3 class='contact-text'>(716) 239 - 0780</h3>
+          </a>
+        </div>
+      </div> -->
     </div>
   </body>
 </html>

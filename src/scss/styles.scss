@@ -193,6 +193,14 @@ body {
   }
 }
 
+hr {
+  width: 75%;
+}
+
+section {
+  padding: 3% 0;
+}
+
 h1, h2, h3, p {
   font-family: $primary-font;
   color: $primary-text-color;
@@ -285,85 +293,8 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
-}
-
-button {
-  display: block;
-  width: 100%;
-  margin: 0;
-  background-color: transparent;
-  border: 1px solid #FFF;
-  border-radius: 15px;
-  color: $primary-text-color;
-  font-family: $primary-font;
-  font-size: 1rem;
   font-weight: lighter;
-  transition: font-size 0.3s, background-color 0.3s, color 0.3s;
-
-  @include mobile-sm-portrait {
-    max-width: 49.5%;
-    margin-bottom: 1%;
-  }
-
-  @include mobile-sm-landscape {
-    max-width: 24%;
-  }
-
-  @include mobile-md-portrait {
-    max-width: 49.5%;
-    margin-bottom: 1%;
-  }
-
-  @include mobile-md-landscape {
-    max-width: 24%;
-  }
-
-  @include mobile-lg-portrait {
-    max-width: 49.5%;
-    margin-bottom: 1%;
-  }
-
-  @include mobile-lg-landscape {
-    max-width: 24%;
-  }
-
-  @include tablet-sm-portrait {
-    max-width: 24%;
-  }
-
-  @include tablet-sm-landscape {
-    max-width: 24%;
-  }
-
-  @include tablet-lg-portrait {
-    max-width: 24.5%;
-  }
-
-  @include tablet-lg-landscape {
-    max-width: 24.5%;
-  }
-
-  @include desktop {
-    max-width: 24.5%;
-  }
-
-  &:hover {
-    cursor: pointer;
-
-    @include desktop {
-      font-size: 1.2rem;
-    }
-  }
-
-  &:active {
-    cursor: pointer;
-    background-color: #404040;
-  }
-
-  &:focus {
-    outline: none;
-  }
+  font-size: 1rem;
 }
 
 a {
@@ -397,6 +328,7 @@ a {
 
 .header-wrapper {
   text-align: center;
+  display: inline-block;
 
   @include mobile-sm-portrait {
     padding: 7% 0;
@@ -506,21 +438,9 @@ a {
   }
 }
 
-.focused {
-  background-color: #FFF;
-  font-weight: normal;
-  color: #202020;
-  outline: none;
-
-  @include desktop {
-    font-size: 1.2rem;
-  }
-}
-
 .main-content-container {
   width: 100%;
   margin: 0 auto;
-  transition: opacity 0.2s;
 
   @include tablet-sm-portrait {
     width: 90%;
@@ -543,21 +463,8 @@ a {
   }
 }
 
-.tab-container {
-  width: 100%;
-  margin-top: 2%;
-}
-
 .about {
   margin: 0 auto;
-}
-
-.fade-in {
-  opacity: 1.0;
-}
-
-.fade-out {
-  opacity: 0.0;
 }
 
 .inactive {
@@ -803,4 +710,8 @@ a {
 
 .contact-text {
   display: inline-block;
+}
+
+#v-app {
+  text-align: center;
 }
