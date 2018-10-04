@@ -1,5 +1,5 @@
 var vm;
 
-window.onload = function() {
-  vm = new Vue({});
-}
+// window.onload = function() {
+//   vm = new Vue({});
+// }

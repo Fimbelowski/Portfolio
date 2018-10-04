@@ -1,1 +1,1 @@
-var vm;window.onload=function(){vm=new Vue({})};
+var vm;

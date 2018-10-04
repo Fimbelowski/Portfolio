@@ -102,8 +102,13 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   background-color: #202020;
+}
+
+header {
+  height: 75px;
+  margin: 15px 0;
 }
 
 h1, h2, h3, p {
@@ -111,14 +116,17 @@ h1, h2, h3, p {
   color: $primary-text-color;
 }
 
+h1 {
+  margin-left: 20px;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
 p {
   font-weight: lighter;
   font-size: 1rem;
-}
-
-a {
-  color: $primary-text-color;
-  text-decoration-color: $primary-text-color;
 }
 
 ::selection {
@@ -135,4 +143,32 @@ a {
 .flex-col-container {
   display: flex;
   flex-direction: column;
+}
+
+.header-inner {
+  background-color: #3B3B3B;
+  max-width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.nav {
+  margin-right: 20px;
+}
+
+.nav-item {
+  margin: 0 10px;
+  color: #9F9F9F;
+  transition: color 0.25s ease-in-out;
+
+  &:hover {
+    color: #FFF;
+  }
+
+  &:focus {
+    color: #456990;
+  }
 }
