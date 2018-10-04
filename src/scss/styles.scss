@@ -156,6 +156,7 @@ p {
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
+  box-shadow: 0 3px 5px #000;
 
   @include mobile-sm-portrait {
     max-width: 92%;
