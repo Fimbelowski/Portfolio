@@ -108,7 +108,11 @@ body {
 
 header {
   height: 75px;
-  margin: 15px 0;
+  margin: 11px 0;
+
+  @include desktop {
+    margin: 15px 0;
+  }
 }
 
 h1, h2, h3, p {
@@ -117,7 +121,7 @@ h1, h2, h3, p {
 }
 
 h1 {
-  margin-left: 20px;
+  margin: 0 0 0 20px;
 }
 
 h2 {
@@ -147,28 +151,53 @@ p {
 
 .header-inner {
   background-color: #3B3B3B;
-  max-width: 70%;
   height: 100%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
-}
 
-.nav {
-  margin-right: 20px;
-}
-
-.nav-item {
-  margin: 0 10px;
-  color: #9F9F9F;
-  transition: color 0.25s ease-in-out;
-
-  &:hover {
-    color: #FFF;
+  @include mobile-sm-portrait {
+    max-width: 92%;
   }
 
-  &:focus {
-    color: #456990;
+  @include mobile-sm-landscape {
+    max-width: 95%;
+  }
+
+  @include mobile-md-portrait {
+    max-width: 94%;
+  }
+
+  @include mobile-md-landscape {
+    max-width: 97%;
+  }
+
+  @include mobile-lg-portrait {
+    max-width: 94%;
+  }
+
+  @include mobile-lg-landscape {
+    max-width: 97%;
+  }
+
+  @include tablet-sm-portrait {
+    max-width: 97%;
+  }
+
+  @include tablet-sm-landscape {
+    max-width: 98%;
+  }
+
+  @include tablet-lg-portrait {
+    max-width: 80%;
+  }
+
+  @include tablet-lg-landscape {
+    max-width: 75%;
+  }
+
+  @include desktop {
+    max-width: 60%;
   }
 }
