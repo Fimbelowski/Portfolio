@@ -149,12 +149,10 @@ p {
   flex-direction: column;
 }
 
-.header-inner {
+.header-inner, .section-inner {
   background-color: #3B3B3B;
-  height: 100%;
   margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
+  padding: 10px 0;
   border-radius: 5px;
   box-shadow: 0 3px 5px #000;
 
@@ -201,6 +199,11 @@ p {
   @include desktop {
     max-width: 60%;
   }
+}
+
+.header-content {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav {
