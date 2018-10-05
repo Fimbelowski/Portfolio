@@ -204,11 +204,11 @@ p {
 }
 
 .nav {
-  margin: 0 30px 0 0;
+  margin: 0 15px 0 0;
 }
 
 .nav-item {
-  margin: 0 4px;
+  margin: 0 5px;
 }
 
 .nav-image {
@@ -219,5 +219,43 @@ p {
 
   &:hover {
     filter: brightness(1);
+  }
+}
+
+.name-long {
+  @include mobile-sm-portrait {
+    display: none;
+  }
+
+  @include mobile-sm-landscape {
+    display: none;
+  }
+
+  @include mobile-md-portrait {
+    display: none;
+  }
+
+  @include mobile-lg-portrait {
+    display: none;
+  }
+}
+
+.name-abbrev {
+  display: none;
+
+  @include mobile-sm-portrait {
+    display: block;
+  }
+
+  @include mobile-sm-landscape {
+    display: block;
+  }
+
+  @include mobile-md-portrait {
+    display: block;
+  }
+
+  @include mobile-lg-portrait {
+    display: block;
   }
 }
