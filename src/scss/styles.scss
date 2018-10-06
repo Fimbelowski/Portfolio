@@ -154,7 +154,6 @@ p {
   margin: 0 auto;
   padding: 10px 0;
   border-radius: 5px;
-  box-shadow: 0 3px 5px #000;
 
   @include mobile-sm-portrait {
     max-width: 92%;
@@ -261,4 +260,26 @@ p {
   @include mobile-lg-portrait {
     display: block;
   }
+}
+
+.preview-container {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 4px;
+}
+
+.project-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.shadow {
+  box-shadow: 0 3px 5px #000;
+}
+
+#project-container {
+  padding: 5% 7% 9%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
