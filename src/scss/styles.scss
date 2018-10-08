@@ -125,7 +125,7 @@ h1 {
 }
 
 h2 {
-  font-weight: lighter;
+  
 }
 
 p {
@@ -266,6 +266,28 @@ p {
   box-sizing: border-box;
   width: 50%;
   padding: 4px;
+}
+
+.preview-inner {
+  position: relative;
+}
+
+.preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.7);
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+
+  text-align: center;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .project-thumb {
