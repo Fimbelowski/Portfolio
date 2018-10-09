@@ -125,12 +125,37 @@ h1 {
 }
 
 h2 {
-  
+
 }
 
 p {
   font-weight: lighter;
   font-size: 1rem;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #161616;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #878787;
+  border-radius: 6px;
+  font-family: $primary-font;
+  font-size: 1rem;
+  color: #878787;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out,
+              color 0.2s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border-color: #FFF;
+    color: #FFF;
+  }
 }
 
 ::selection {
@@ -281,7 +306,7 @@ p {
   background-color: rgba(20, 20, 20, 0.7);
   border-radius: 6px;
   opacity: 0;
-  transition: opacity 0.3s linear;
+  transition: opacity 0.2s linear;
 
   text-align: center;
 
@@ -298,6 +323,19 @@ p {
 
 .shadow {
   box-shadow: 0 3px 5px #000;
+}
+
+.overlay-title {
+
+}
+
+.overlay-subtitle {
+  color: #C3C3C3;
+  margin: 0;
+}
+
+.overlay-btn-container {
+  margin-top: 10%;
 }
 
 #project-container {
