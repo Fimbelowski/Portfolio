@@ -155,6 +155,9 @@ button {
   &:hover {
     border-color: #FFF;
     color: #FFF;
+    .btn-icon {
+      filter: brightness(1);
+    }
   }
 }
 
@@ -336,6 +339,14 @@ button {
 
 .overlay-btn-container {
   margin-top: 10%;
+}
+
+.btn-icon {
+  height: 16px;
+  width: auto;
+  margin-left: 5px;
+  filter: brightness(0.6);
+  transition: filter 0.2s ease-in-out;
 }
 
 #project-container {

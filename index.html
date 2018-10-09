@@ -20,12 +20,14 @@
         <h1 class='name-long'>Christopher Fimbel</h1>
         <h1 class='name-abbrev'>CF</h1>
         <div class='nav flex-row-container'>
-          <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' rel='external' class='nav-item'><img class='nav-image' src='dist/images/linkedin-3-64.png'></a>
-          <a href='https://github.com/Fimbelowski' target='_blank' rel='external' class='nav-item'><img class='nav-image' src='dist/images/GitHub-Mark-Light-64px.png' alt='GitHub'></a>
+          <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' rel='external' class='nav-item'><img class='nav-image' src='dist/images/linkedin-logo.png'></a>
+          <a href='https://github.com/Fimbelowski' target='_blank' rel='external' class='nav-item'><img class='nav-image' src='dist/images/github-logo.png' alt='GitHub'></a>
         </div>
       </div>
     </header>
     <section id='projects'>
+      <div class='modal'>
+      </div>
       <div class='section-inner shadow'>
         <h1>Projects</h1>
         <div class='flex-row-container' id='project-container'>
@@ -35,8 +37,16 @@
                 <h2 class='overlay-title'>What's WR?</h2>
                 <p class='overlay-subtitle'>HTML, CSS, JavaScript, Vue.js, SASS</p>
                 <div class='overlay-btn-container'>
-                  <button type='button'>Read More</button>
-                  <button type='button'>Visit Site</button>
+                  <button type='button'>
+                    <span>Read More</span>
+                    <img src='dist/images/full-size.png' alt='Full Screen' class='btn-icon'>
+                  </button>
+                  <a href='https://fimbelowski.github.io/Whats-WR/' target='_blank' rel='external'>
+                    <button type='button'>
+                      <span>Visit Site</span>
+                      <img src='dist/images/external-link.png' alt='External Link' class='btn-icon'>
+                    </button>
+                  </a>
                 </div>
               </div>
               <img src='dist/images/projects/whats-wr.png' class='project-thumb shadow'>
