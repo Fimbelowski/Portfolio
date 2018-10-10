@@ -26,7 +26,11 @@
       </div>
     </header>
     <section id='projects'>
-      <div class='modal'>
+      <div class='modal' :class='{ inactive: !modalActive }'>
+        <div class='section-inner modal-content-container'>
+          <h1>{{ activeModalContent.title }}</h1>
+          <h2>{{ activeModalContent.subtitle }}</h2>
+        </div>
       </div>
       <div class='section-inner shadow'>
         <h1>Projects</h1>
@@ -37,7 +41,7 @@
                 <h2 class='overlay-title'>What's WR?</h2>
                 <p class='overlay-subtitle'>HTML, CSS, JavaScript, Vue.js, SASS</p>
                 <div class='overlay-btn-container'>
-                  <button type='button' class='flex-btn'>
+                  <button type='button' class='flex-btn' @click='activateModal(0)'>
                     <span>Read More</span>
                     <img src='dist/images/full-size.png' alt='Full Screen' class='btn-icon'>
                   </button>
