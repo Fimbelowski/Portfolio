@@ -341,12 +341,23 @@ button {
   margin-top: 10%;
 }
 
+.flex-btn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-icon {
   height: 16px;
   width: auto;
   margin-left: 5px;
   filter: brightness(0.6);
   transition: filter 0.2s ease-in-out;
+}
+
+.no-decoration {
+  text-decoration: none;
 }
 
 #project-container {
