@@ -1,3 +1,4 @@
+// Variable declarations
 $primary-font: Poppins, sans-serif;
 $primary-text-color: #FFF;
 
@@ -29,7 +30,9 @@ $tablet-lg-landscape-min-width: $tablet-sm-landscape-max-width + 1px;
 $tablet-lg-landscape-max-width: 1366px;
 
 $desktop-min-width: $tablet-lg-landscape-max-width + 1px;
+// End variable declarations
 
+// Mixin declarations
 @mixin mobile-sm-portrait {
   @media (max-width: #{$mobile-sm-portrait-max-width}) and (orientation: portrait) {
     @content;
@@ -95,7 +98,9 @@ $desktop-min-width: $tablet-lg-landscape-max-width + 1px;
     @content;
   }
 }
+// End mixin declarations
 
+// Base rules
 html {
   height: 100%;
   font-size: 18px;
@@ -166,7 +171,9 @@ button {
   background-color: #FFF;
   outline: none;
 }
+// End base rules
 
+// Layout rules
 .flex-row-container {
   display: flex;
   flex-direction: row;
