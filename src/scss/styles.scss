@@ -249,12 +249,35 @@ h1 {
 // End layout rules
 
 // Module Rules
+.header-text::after {
+  content: 'Christopher Fimbel';
+
+  @include mobile-sm-portrait {
+    content: 'CF';
+  }
+
+  @include mobile-sm-landscape {
+    content: 'CF';
+  }
+
+  @include mobile-md-portrait {
+    content: 'CF';
+  }
+
+  @include mobile-lg-portrait {
+    content: 'CF';
+  }
+}
+
 .nav {
+  display: flex;
+  flex-direction: row;
   margin: 0 15px 0 0;
 }
 
-.nav > a {
+.nav-anchor {
   margin: 0 5px;
+  display: block;
 }
 
 .nav-image {
@@ -265,44 +288,6 @@ h1 {
 
   &:hover {
     filter: brightness(1);
-  }
-}
-
-.name-long {
-  @include mobile-sm-portrait {
-    display: none;
-  }
-
-  @include mobile-sm-landscape {
-    display: none;
-  }
-
-  @include mobile-md-portrait {
-    display: none;
-  }
-
-  @include mobile-lg-portrait {
-    display: none;
-  }
-}
-
-.name-abbrev {
-  display: none;
-
-  @include mobile-sm-portrait {
-    display: block;
-  }
-
-  @include mobile-sm-landscape {
-    display: block;
-  }
-
-  @include mobile-md-portrait {
-    display: block;
-  }
-
-  @include mobile-lg-portrait {
-    display: block;
   }
 }
 
