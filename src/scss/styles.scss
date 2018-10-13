@@ -116,6 +116,10 @@ h1, h2, h3, p {
   color: $primary-text-color;
 }
 
+h1 {
+  margin: 0 0 0 20px;
+}
+
 p {
   font-weight: lighter;
   font-size: 1rem;
@@ -185,20 +189,6 @@ a > button {
   }
 }
 
-h1 {
-  margin: 0 0 0 20px;
-}
-
-.flex-row-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-col-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .l-header-inner, .l-section-inner {
   background-color: #3B3B3B;
   margin: 0 auto;
@@ -263,6 +253,16 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   padding: 5% 7% 9%;
+}
+
+.l-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 // End layout rules
 
@@ -378,16 +378,6 @@ h1 {
 
 .no-decoration {
   text-decoration: none;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .inactive {
