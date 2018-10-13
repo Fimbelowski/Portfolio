@@ -122,36 +122,46 @@ p {
 }
 
 button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
   width: 200px;
   height: 50px;
+
   background-color: #161616;
+
   border-width: 1px;
   border-style: solid;
-  border-color: #878787;
+  border-color: #FFF;
   border-radius: 6px;
+
   font-family: $primary-font;
   font-size: 1rem;
-  color: #878787;
+  color: #FFF;
+  filter: brightness(0.6);
+
   cursor: pointer;
-  transition: border-color 0.2s ease-in-out,
-              color 0.2s ease-in-out;
+
+  transition: filter 0.2s ease-in-out;
 
   &:focus {
     outline: none;
   }
 
   &:hover {
-    border-color: #FFF;
-    color: #FFF;
-    .btn-icon {
-      filter: brightness(1);
-    }
+    filter: brightness(1);
   }
 }
 
 a {
   color: inherit;
   cursor: pointer;
+}
+
+a > button {
+  text-decoration: none;
 }
 
 ::selection {
@@ -246,6 +256,14 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+
+.l-project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5% 7% 9%;
+}
 // End layout rules
 
 // Module Rules
@@ -297,16 +315,22 @@ h1 {
   padding: 4px;
 }
 
-.preview-inner {
+.preview-content-container {
   position: relative;
 }
 
 .preview-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
   background-color: rgba(20, 20, 20, 0.7);
   border-radius: 6px;
   opacity: 0;
@@ -330,7 +354,7 @@ h1 {
 }
 
 .overlay-title {
-
+  margin: 0 0 7px 0;
 }
 
 .overlay-subtitle {
@@ -339,22 +363,17 @@ h1 {
 }
 
 .overlay-btn-container {
-  margin-top: 10%;
+  margin-top: 14px;
 }
 
-.flex-btn {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.overlay-btn-text {
+  margin: 0;
 }
 
 .btn-icon {
   height: 16px;
   width: auto;
   margin-left: 10px;
-  filter: brightness(0.6);
-  transition: filter 0.2s ease-in-out;
 }
 
 .no-decoration {
@@ -377,10 +396,4 @@ h1 {
 
 .modal-content-container {
   margin-top: 2%;
-}
-
-#project-container {
-  padding: 5% 7% 9%;
-  flex-wrap: wrap;
-  justify-content: center;
 }
