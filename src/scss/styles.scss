@@ -196,43 +196,43 @@ h1 {
   border-radius: 5px;
 
   @include mobile-sm-portrait {
-    max-width: 92%;
+    width: 92%;
   }
 
   @include mobile-sm-landscape {
-    max-width: 95%;
+    width: 95%;
   }
 
   @include mobile-md-portrait {
-    max-width: 94%;
+    width: 94%;
   }
 
   @include mobile-md-landscape {
-    max-width: 97%;
+    width: 97%;
   }
 
   @include mobile-lg-portrait {
-    max-width: 94%;
+    width: 94%;
   }
 
   @include mobile-lg-landscape {
-    max-width: 97%;
+    width: 97%;
   }
 
   @include tablet-sm-portrait {
-    max-width: 97%;
+    width: 97%;
   }
 
   @include tablet-sm-landscape {
-    max-width: 98%;
+    width: 98%;
   }
 
   @include tablet-lg-portrait {
-    max-width: 80%;
+    width: 80%;
   }
 
   @include tablet-lg-landscape {
-    max-width: 75%;
+    width: 75%;
   }
 
   @include desktop {
