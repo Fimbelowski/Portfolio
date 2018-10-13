@@ -111,26 +111,9 @@ body {
   background-color: #202020;
 }
 
-header {
-  height: 75px;
-  margin: 11px 0;
-
-  @include desktop {
-    margin: 15px 0;
-  }
-}
-
 h1, h2, h3, p {
   font-family: $primary-font;
   color: $primary-text-color;
-}
-
-h1 {
-  margin: 0 0 0 20px;
-}
-
-h2 {
-
 }
 
 p {
@@ -166,6 +149,11 @@ button {
   }
 }
 
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
 ::selection {
   color: #2D2D2D;
   background-color: #FFF;
@@ -174,6 +162,23 @@ button {
 // End base rules
 
 // Layout rules
+.l-header {
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  margin: 11px 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @include desktop {
+    margin: 15px 0;
+  }
+}
+
+h1 {
+  margin: 0 0 0 20px;
+}
+
 .flex-row-container {
   display: flex;
   flex-direction: row;
@@ -184,7 +189,7 @@ button {
   flex-direction: column;
 }
 
-.header-inner, .section-inner {
+.l-header-inner, .l-section-inner {
   background-color: #3B3B3B;
   margin: 0 auto;
   padding: 10px 0;
@@ -231,20 +236,24 @@ button {
   }
 
   @include desktop {
-    max-width: 60%;
+    width: 60%;
   }
 }
 
-.header-content {
+.l-header-inner {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+// End layout rules
 
+// Module Rules
 .nav {
   margin: 0 15px 0 0;
 }
 
-.nav-item {
+.nav > a {
   margin: 0 5px;
 }
 
