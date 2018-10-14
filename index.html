@@ -25,10 +25,8 @@
       </div>
     </header>
     <section id='projects'>
-      <div class='l-modal' :class='{ inactive: !modalActive }'>
-        <div class='l-section-inner modal-content-container shadow'>
-          <!-- <h1>{{ activeModalContent.title }}</h1>
-          <h2>{{ activeModalContent.subtitle }}</h2> -->
+      <div v-cloak class='l-modal' :class='{ "is-hidden": !modalActive }'>
+        <div class='l-section-inner l-modal-content-container shadow'>
         </div>
       </div>
       <div class='l-section-inner shadow'>
@@ -52,7 +50,7 @@
                   </a>
                 </div>
               </div>
-              <img src='dist/images/projects/whats-wr.png' class='project-thumb shadow'>
+              <img src='dist/images/projects/whats-wr.png' class='project-thumbnail shadow'>
             </div>
           </div>
         </div>

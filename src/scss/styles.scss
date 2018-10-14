@@ -264,6 +264,15 @@ a > button {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+.l-modal-content-container {
+  margin-top: 2%;
+}
+
+.l-modal-exit {
+  float: right;
+  color: #FFF;
+}
 // End layout rules
 
 // Module Rules
@@ -343,7 +352,7 @@ a > button {
   }
 }
 
-.project-thumb {
+.project-thumbnail {
   width: 100%;
   height: auto;
   border-radius: 6px;
@@ -375,15 +384,14 @@ a > button {
   width: auto;
   margin-left: 10px;
 }
+// End module rules
 
-.no-decoration {
-  text-decoration: none;
-}
-
-.inactive {
+// State rules
+[v-cloak] {
   display: none;
 }
 
-.modal-content-container {
-  margin-top: 2%;
+.is-hidden {
+  display: none;
 }
+// End state rules
