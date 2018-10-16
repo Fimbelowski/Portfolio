@@ -28,23 +28,29 @@
     </header>
     <section id='projects'>
       <div v-cloak class='l-modal' :class='{ "is-hidden": !isModalActive }' @click='deactivateModal($event)' id='modal'>
-        <div class='l-modal-content-container'>
-          <div class='section-inner shadow'>
-            <div class='section-header'>
-              <div class='project-caption'>
-                <h1 class='project-title'>{{ activeModalContent.title }}</h1>
-                <h2 class='project-subtitle'>{{ activeModalContent.subtitle }}</h2>
-              </div>
-              <h1 class='modal-exit' id='modal-exit-button'>&times</h1>
+        <div class='l-modal-content-container section-inner shadow'>
+          <div class='section-header'>
+            <div class='project-caption'>
+              <h1 class='project-title'>{{ activeModalContent.title }}</h1>
+              <h2 class='project-subtitle'>{{ activeModalContent.subtitle }}</h2>
             </div>
-            <div class='project-info'>
-              <div class='project-gallery'>
-                <img class='project-gallery-image shadow' :src='activeModalContent.gallery.path1' alt="Project Preview Image 1">
-                <img class='project-gallery-image shadow' :src='activeModalContent.gallery.path2' alt="Project Preview Image 2">
-              </div>
-              <div class='project-description'>
+            <h1 class='modal-exit' id='modal-exit-button'>&times</h1>
+          </div>
+          <div class='project-info'>
+            <div class='project-gallery'>
+              <img class='project-gallery-image shadow' :src='activeModalContent.gallery.path1' alt="Project Preview Image 1">
+              <img class='project-gallery-image shadow' :src='activeModalContent.gallery.path2' alt="Project Preview Image 2">
+            </div>
+            <div class='project-description'>
+              <div>
                 <p v-for='paragraph in activeModalContent.desc'>{{ paragraph }}</p>
               </div>
+              <a class='visit-project-btn' :href='activeModalContent.uri' target='_blank' rel='external'>
+                <button type='button'>
+                  <p class='overlay-btn-text'>Visit Site</p>
+                  <img src='dist/images/external-link.png' alt='External Link' class='btn-icon'>
+                </button>
+              </a>
             </div>
           </div>
         </div>
