@@ -117,7 +117,7 @@ h1, h2, h3, p {
 }
 
 h1 {
-  margin: 0 0 0 20px;
+  margin: 0;
 }
 
 p {
@@ -177,19 +177,56 @@ a > button {
 
 // Layout rules
 .l-header {
-  display: flex;
-  flex-direction: row;
   height: 75px;
   margin: 11px 0;
-  justify-content: space-between;
-  align-items: center;
 
   @include desktop {
     margin: 15px 0;
   }
 }
 
-.l-header-inner, .l-section-inner {
+.l-header-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5% 7% 9%;
+}
+
+.l-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.l-modal-content-container {
+  margin-top: 15px;
+}
+// End layout rules
+
+// Module Rules
+.section-header {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 20px;
+}
+
+.section-inner {
   background-color: #3B3B3B;
   margin: 0 auto;
   padding: 10px 0;
@@ -240,42 +277,6 @@ a > button {
   }
 }
 
-.l-header-inner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.l-project-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 5% 7% 9%;
-}
-
-.l-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.l-modal-content-container {
-  margin-top: 2%;
-}
-
-.l-modal-exit {
-  float: right;
-  color: #FFF;
-}
-// End layout rules
-
-// Module Rules
 .header-text::after {
   content: 'Christopher Fimbel';
 
@@ -299,7 +300,6 @@ a > button {
 .nav {
   display: flex;
   flex-direction: row;
-  margin: 0 15px 0 0;
 }
 
 .nav-anchor {
@@ -383,6 +383,18 @@ a > button {
   height: 16px;
   width: auto;
   margin-left: 10px;
+}
+
+.modal-exit {
+  cursor: pointer;
+
+  filter: brightness(.6);
+
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(1);
+  }
 }
 // End module rules
 

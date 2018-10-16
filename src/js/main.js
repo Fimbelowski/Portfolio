@@ -18,6 +18,11 @@ window.onload = function() {
         this.toggleModal();
         this.setActiveModalContent(contentIndex);
       },
+      deactivateModal: function(e) {
+        if(e.target.id === 'modal-exit-button' || e.target.id === 'modal') {
+          this.toggleModal();
+        }
+      },
       toggleModal: function() {
         this.modalActive = !this.modalActive;
       },
