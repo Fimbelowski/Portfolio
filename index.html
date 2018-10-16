@@ -19,10 +19,10 @@
       <div class='l-header-inner section-inner shadow'>
         <div class='section-header'>
           <h1><span class='header-text'></span></h1>
-          <div class='nav'>
+          <nav class='nav'>
             <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' rel='external' class='nav-anchor'><img class='nav-image' src='dist/images/linkedin-logo.png' alt='linkedin'></a>
             <a href='https://github.com/Fimbelowski' target='_blank' rel='external' class='nav-anchor'><img class='nav-image' src='dist/images/github-logo.png' alt='GitHub'></a>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -34,17 +34,17 @@
               <h1 class='project-title'>{{ activeModalContent.title }}</h1>
               <h2 class='project-subtitle'>{{ activeModalContent.subtitle }}</h2>
             </div>
-            <h1 class='modal-exit' id='modal-exit-button'>&times</h1>
+            <h1 aria-label='Close' class='modal-exit' id='modal-exit-button'>&times</h1>
           </div>
           <div class='project-info'>
             <div class='project-gallery'>
-              <img class='project-gallery-image shadow' :src='activeModalContent.gallery.path1' alt="Project Preview Image 1">
-              <img class='project-gallery-image shadow' :src='activeModalContent.gallery.path2' alt="Project Preview Image 2">
+              <img class='project-gallery-image shadow' :src='activeModalContent.gallery[0]' alt="Project Preview Image 1">
+              <img class='project-gallery-image shadow' :src='activeModalContent.gallery[1]' alt="Project Preview Image 2">
             </div>
             <div class='project-description'>
-              <div>
+              <article>
                 <p v-for='paragraph in activeModalContent.desc'>{{ paragraph }}</p>
-              </div>
+              </article>
               <a class='visit-project-btn' :href='activeModalContent.uri' target='_blank' rel='external'>
                 <button type='button'>
                   <p class='overlay-btn-text'>Visit Site</p>
