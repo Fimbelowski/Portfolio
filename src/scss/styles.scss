@@ -102,7 +102,6 @@ $desktop-min-width: $tablet-lg-landscape-max-width + 1px;
 
 // Base rules
 html {
-  height: 100%;
   font-size: 18px;
 }
 
@@ -117,6 +116,12 @@ h1, h2, h3, p {
 }
 
 h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: lighter;
   margin: 0;
 }
 
@@ -222,14 +227,12 @@ a > button {
   flex: 1 1 auto;
   justify-content: space-between;
   align-items: center;
-
-  margin: 0 20px;
 }
 
 .section-inner {
   background-color: #3B3B3B;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px 20px 15px;
   border-radius: 5px;
 
   @include mobile-sm-portrait {
@@ -386,6 +389,8 @@ a > button {
 }
 
 .modal-exit {
+  align-self: flex-start;
+
   cursor: pointer;
 
   filter: brightness(.6);
@@ -395,6 +400,46 @@ a > button {
   &:hover {
     filter: brightness(1);
   }
+}
+
+.project-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-title {
+
+}
+
+.project-subtitle {
+
+}
+
+.project-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-gallery {
+  box-sizing: border-box;
+  width: 60%;
+  flex: 0 0 auto;
+  padding: 10px 0;
+  margin-right: 15px;
+}
+
+.project-gallery-image {
+  width: 100%;
+  height: auto;
+
+  margin: 5px 0;
+
+  border-radius: 5px;
+}
+
+.project-description {
+  padding: 10px 0;
 }
 // End module rules
 

@@ -20,19 +20,31 @@
         <div class='section-header'>
           <h1><span class='header-text'></span></h1>
           <div class='nav'>
-            <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' rel='external' class='nav-anchor'><img class='nav-image' src='dist/images/linkedin-logo.png'></a>
+            <a href='https://www.linkedin.com/in/fimbelowski/' target='_blank' rel='external' class='nav-anchor'><img class='nav-image' src='dist/images/linkedin-logo.png' alt='linkedin'></a>
             <a href='https://github.com/Fimbelowski' target='_blank' rel='external' class='nav-anchor'><img class='nav-image' src='dist/images/github-logo.png' alt='GitHub'></a>
           </div>
         </div>
       </div>
     </header>
     <section id='projects'>
-      <div v-cloak class='l-modal' :class='{ "is-hidden": !modalActive }' @click='deactivateModal($event)' id='modal'>
+      <div v-cloak class='l-modal' :class='{ "is-hidden": !isModalActive }' @click='deactivateModal($event)' id='modal'>
         <div class='l-modal-content-container'>
           <div class='section-inner shadow'>
             <div class='section-header'>
-              <h1>What's WR?</h1>
+              <div class='project-caption'>
+                <h1 class='project-title'>{{ activeModalContent.title }}</h1>
+                <h2 class='project-subtitle'>{{ activeModalContent.subtitle }}</h2>
+              </div>
               <h1 class='modal-exit' id='modal-exit-button'>&times</h1>
+            </div>
+            <div class='project-info'>
+              <div class='project-gallery'>
+                <img class='project-gallery-image shadow' :src='activeModalContent.gallery.path1' alt="Project Preview Image 1">
+                <img class='project-gallery-image shadow' :src='activeModalContent.gallery.path2' alt="Project Preview Image 2">
+              </div>
+              <div class='project-description'>
+                <p v-for='paragraph in activeModalContent.desc'>{{ paragraph }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -48,7 +60,7 @@
                 <h2 class='overlay-title'>What's WR?</h2>
                 <p class='overlay-subtitle'>HTML, CSS, JavaScript, Vue.js, SASS</p>
                 <div class='overlay-btn-container'>
-                  <button type='button' @click='activateModal(0)'>
+                  <button type='button' @click='activateModal(1)'>
                     <p class='overlay-btn-text'>Read More</p>
                     <img src='dist/images/full-size.png' alt='Full Screen' class='btn-icon'>
                   </button>
@@ -60,7 +72,7 @@
                   </a>
                 </div>
               </div>
-              <img src='dist/images/projects/whats-wr.png' class='project-thumbnail shadow'>
+              <img src='dist/images/projects/whats-wr/gallery-1.png' class='project-thumbnail shadow'>
             </div>
           </div>
         </div>
