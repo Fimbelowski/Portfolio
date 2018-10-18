@@ -43,12 +43,18 @@
             </div>
             <div class='project-description'>
               <article>
-                <p v-for='paragraph in activeModalContent.desc'>{{ paragraph }}</p>
+                <p v-for='paragraph in activeModalContent.desc' class='project-desc-text'>{{ paragraph }}</p>
               </article>
               <a class='visit-project-btn' :href='activeModalContent.uri' target='_blank' rel='external'>
                 <button type='button'>
-                  <p class='overlay-btn-text'>Visit Site</p>
+                  <p>Visit Site</p>
                   <img src='dist/images/external-link.png' alt='External Link' class='btn-icon'>
+                </button>
+              </a>
+              <a class='visit-project-btn' :href='activeModalContent.github' target='_blank' rel='external'>
+                <button type='button'>
+                  <p>View on GitHub</p>
+                  <img src='dist/images/github-logo.png' alt='External Link' class='btn-icon'>
                 </button>
               </a>
             </div>
@@ -67,13 +73,19 @@
                 <p class='overlay-subtitle'>HTML, CSS, JavaScript, Vue.js, SASS</p>
                 <div class='overlay-btn-container'>
                   <button type='button' @click='activateModal(1)'>
-                    <p class='overlay-btn-text'>Read More</p>
+                    <p>Read More</p>
                     <img src='dist/images/full-size.png' alt='Full Screen' class='btn-icon'>
                   </button>
                   <a href='https://fimbelowski.github.io/Whats-WR/' target='_blank' rel='external'>
                     <button type='button'>
-                      <p class='overlay-btn-text'>Visit Site</p>
+                      <p>Visit Site</p>
                       <img src='dist/images/external-link.png' alt='External Link' class='btn-icon'>
+                    </button>
+                  </a>
+                  <a href='https://github.com/Fimbelowski/Whats-WR' target='_blank' rel='external'>
+                    <button type='button'>
+                      <p>View on GitHub</p>
+                      <img src='dist/images/github-logo.png' alt='External Link' class='btn-icon'>
                     </button>
                   </a>
                 </div>
