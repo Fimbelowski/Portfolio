@@ -155,7 +155,7 @@ button {
   font-family: $primary-font;
   font-size: 1rem;
   color: #FFF;
-  filter: brightness(0.6);
+  filter: brightness(0.4);
 
   cursor: pointer;
 
@@ -377,7 +377,7 @@ a > button {
 }
 
 .overlay-btn {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .btn-icon {
@@ -450,6 +450,10 @@ a > button {
 
 .visit-project-btn {
   align-self: center;
+}
+
+.about-text {
+  width: 50%;
 }
 // End module rules
 
