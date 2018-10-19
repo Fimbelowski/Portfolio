@@ -132,6 +132,10 @@ p {
   margin: 0;
 }
 
+header, section {
+  margin: 15px 0;
+}
+
 button {
   display: inline-flex;
   flex-direction: row;
@@ -185,15 +189,6 @@ a > button {
 // End base rules
 
 // Layout rules
-.l-header {
-  height: 75px;
-  margin: 11px 0;
-
-  @include desktop {
-    margin: 15px 0;
-  }
-}
-
 .l-header-inner {
   display: flex;
   flex-direction: row;
