@@ -33,6 +33,7 @@
         </div>
         <div class='about-text'>
           <p>Hello, my name is Chris. I am an aspiring self-taugh Front End Developer / Designer currently living in Tempe, AZ.</p>
+          <p>I am proficient in all the necessities; HTML, JavaScript, CSS. I also have experience with Vue.js, SASS, Git, and Gulp. I'm always trying to hone my existing skills as well as learning new languages, tools, and methodologies so I'm very flexible!</p>
         </div>
       </div>
     </section>
@@ -53,7 +54,7 @@
             </div>
             <div class='project-description'>
               <article>
-                <p v-for='paragraph in activeModalContent.desc' class='project-desc-text'>{{ paragraph }}</p>
+                <p v-for='paragraph in activeModalContent.desc'>{{ paragraph }}</p>
               </article>
               <div>
                 <a class='visit-project-btn' :href='activeModalContent.uri' target='_blank' rel='external'>

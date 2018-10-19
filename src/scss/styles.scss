@@ -129,7 +129,7 @@ p {
   font-weight: lighter;
   font-size: 1rem;
 
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 header, section {
@@ -168,6 +168,10 @@ button {
   &:hover {
     filter: brightness(1);
   }
+}
+
+button > p {
+  margin: 0;
 }
 
 a {
@@ -442,10 +446,6 @@ a > button {
   align-items: center;
 
   padding: 10px 0;
-}
-
-.project-desc-text {
-  margin-bottom: 20px;
 }
 
 .visit-project-btn {
