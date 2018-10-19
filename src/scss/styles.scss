@@ -145,8 +145,6 @@ button {
   width: 200px;
   height: 50px;
 
-  margin-bottom: 10px;
-
   background-color: #161616;
 
   border-width: 1px;
@@ -378,6 +376,10 @@ a > button {
   margin-top: 14px;
 }
 
+.overlay-btn {
+  margin-bottom: 10px;
+}
+
 .btn-icon {
   height: 16px;
   width: auto;
@@ -437,7 +439,7 @@ a > button {
 .project-description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 
   padding: 10px 0;
 }
