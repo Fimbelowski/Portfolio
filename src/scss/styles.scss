@@ -115,14 +115,13 @@ h1, h2, h3, p {
   color: $primary-text-color;
 }
 
-h1 {
+h1, h2, h3 {
   margin: 0;
 }
 
 h2 {
   font-size: 1.2rem;
   font-weight: lighter;
-  margin: 0;
 }
 
 p {
@@ -175,12 +174,8 @@ button > p {
 }
 
 a {
-  color: inherit;
+  color: $primary-text-color;
   cursor: pointer;
-}
-
-a > button {
-  text-decoration: none;
 }
 
 ::selection {
@@ -390,6 +385,10 @@ a > button {
   margin-left: 10px;
 }
 
+.btn-link {
+  text-decoration: none;
+}
+
 .modal-exit {
   align-self: flex-start;
 
@@ -459,6 +458,7 @@ a > button {
 .contact-info-container {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 }
 
 .contact-info-item {
