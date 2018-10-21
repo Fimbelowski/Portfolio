@@ -132,7 +132,7 @@ p {
   margin-bottom: 20px;
 }
 
-header, section {
+header, section, footer {
   margin: 15px 0;
 }
 
@@ -454,6 +454,18 @@ a > button {
 
 .about-text {
   width: 50%;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-info-item {
+  box-sizing: border-box;
+  width: 33.33%;
+
+  text-align: center;
 }
 // End module rules
 
