@@ -176,6 +176,7 @@ button > p {
 a {
   color: $primary-text-color;
   cursor: pointer;
+  text-decoration: none;
 }
 
 ::selection {
@@ -458,7 +459,7 @@ a {
 .contact-info-container {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .contact-info-item {
@@ -476,5 +477,9 @@ a {
 
 .is-hidden {
   display: none;
+}
+
+.is-emphasized {
+  font-weight: normal;
 }
 // End state rules
