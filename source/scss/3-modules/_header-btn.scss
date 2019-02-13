@@ -1,3 +1,9 @@
 .header-btn {
     font-size: 2rem;
+
+    transition: color 0.2s;
+
+    &:hover {
+        color: $primary-300;
+    }
 }
