@@ -1,9 +1,19 @@
+html {
+    font-size: 24px;
+}
+
 body {
     background-color: $gray-200;
 }
 
-header {
-    height: 50px;
-    background-color: $gray-100;
-    border-bottom: 1px solid $gray-400;
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p, button {
+    font-family: $body-font;
 }

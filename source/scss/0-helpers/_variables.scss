@@ -12,3 +12,22 @@
     $primary-300: #5F64EF;
     $primary-400: #5559D6;
     $primary-500: #4A4EBA;
+
+// Font Declarations
+@font-face {
+    font-family: 'The-National-Regular';
+    src: url('/dist/fonts/TheNational-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'The-National-Bold';
+    src: url('/dist/fonts/TheNational-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Font Variables
+$heading-font: 'The-National-Bold';
+$body-font: 'The-National-Regular';
