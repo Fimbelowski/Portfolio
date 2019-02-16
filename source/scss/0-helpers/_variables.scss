@@ -15,19 +15,19 @@
 
 // Font Declarations
 @font-face {
-    font-family: 'The-National-Regular';
-    src: url('/dist/fonts/TheNational-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'The-National-Bold';
     src: url('/dist/fonts/TheNational-Bold.otf');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Jura-Regular';
+    src: url(/dist/fonts/Jura-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 // Font Variables
 $heading-font: 'The-National-Bold';
-$body-font: 'The-National-Regular';
+$body-font: 'Jura-Regular';

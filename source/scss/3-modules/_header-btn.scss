@@ -1,9 +1,18 @@
 .header-btn {
-    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    color: $gray-500;
 
     transition: color 0.2s;
 
     &:hover {
         color: $primary-300;
     }
+}
+
+.header-btn-text {
+    font-size: 1.6rem;
+    line-height: .8;
 }
