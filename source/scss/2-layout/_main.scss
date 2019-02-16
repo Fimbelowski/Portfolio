@@ -3,6 +3,16 @@ main {
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
 
-    padding: 15px;
+.main-inner {
+    width: 1150px;
+
+    background-color: $gray-100;
+    border-left: 1px solid $gray-400;
+    border-right: 1px solid $gray-400;
+
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.15),
+                -5px 0 20px rgba(0, 0, 0, 0.15);
 }
