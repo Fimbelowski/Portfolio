@@ -39,15 +39,37 @@
                             <hr class='project-title-decoration'>
                         </div>
                         <figure class='project-example'>
-                            <img class='project-example-img-landscape' src='/dist/images/whatswr_desktop.png'>
-                            <figcaption>Desktop Layout</figcaption>
+                            <img class='project-example-img-landscape project-example-img-shadow' src='/dist/images/whatswr_desktop.png'>
+                            <figcaption class='project-example-img-caption'>Desktop Layout</figcaption>
                         </figure>
                         <figure class='project-example'>
-                            <img class='project-example-img-portrait' src='/dist/images/whatswr_mobile_portrait.PNG'>
-                            <figcaption>Mobile Layout</figcaption>
+                            <img class='project-example-img-portrait project-example-img-shadow' src='/dist/images/whatswr_mobile_portrait.PNG'>
+                            <figcaption class='project-example-img-caption'>Mobile Layout</figcaption>
                         </figure>
                         <p class='project-body-text'>"What's WR?" is a SPA that consumes speedrun.com's API and uses clever filtering methods in order to provide the user with a random speedrun world record to as well as its accompanying video.</p>
                         <p class='project-body-text'>The site works by first finding the total number of games being hosted on speedrun.com. Then, a random set of 20 games is picked and from there various API calls and checks are made in order to filter out runs that are not suitable to show the user. When all unsuitable runs have been filtered out, one of the remaining is picked at random and the page is populated via various Vue components.</p>
+                        <p class='project-body-text'>Check out <a href='http://whatswr.tv'>the site</a>!</p>
+                        <p class='project-body-text'>Check out <a href='https://github.com/Fimbelowski/Whats-WR'>the GitHub repository</a>!</p>
+                    </div>
+                    <div class='project-container'>
+                        <div class='project-header'>
+                            <hr class='project-title-decoration'>
+                            <h1 class='project-title'>Dustmod.com</h1>
+                            <hr class='project-title-decoration'>
+                        </div>
+                        <figure class='project-example'>
+                            <img class='project-example-img-landscape project-example-img-shadow' src='/dist/images/dustmod_desktop.PNG'>
+                            <figcaption class='project-example-img-caption'>Desktop Layout</figcaption>
+                        </figure>
+                        <figure class='project-example'>
+                            <img class='project-example-img-portrait project-example-img-shadow' src='/dist/images/dustmod_mobile_portrait.PNG'>
+                            <figcaption class='project-example-img-caption'>Mobile Layout</figcaption>
+                        </figure>
+                        <p class='project-body-text'>Dustmod.com is a SPA that hosts Dustmod; an in-game mod for the game Dustforce DX which extends the base game and also adds quality of life changes.</p>
+                        <p class='project-body-text'>The site focuses heavily on user experience, conveying succinctly what the mod itself does and then allowing the user to easily download the mod for the proper platform when they are ready.</p>
+                        <p class='project-body-text'>The transitions and animations on the page were made by scratch and implemented using Vue's built-in transition feature. Vue is also used to upkeep the page by consuming endpoints provided by the mod's creator in order to keep the mod's version number and download links updated without frequently changing the source code.</p>
+                        <p class='project-body-text'>Check out <a href='http://dustmod.com'>the site</a>!</p>
+                        <p class='project-body-text'>Check out <a href='https://github.com/Fimbelowski/Dustmod.com'>the GitHub repository</a>!</p>
                     </div>
                 </section>
             </div>
