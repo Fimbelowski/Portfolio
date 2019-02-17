@@ -52,3 +52,26 @@
 .project-example-img-caption {
     margin-top: 3px;
 }
+
+@mixin project--mobile() {
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        clear: none;
+    }
+
+    .project-example {
+        order: 1000;
+        margin: 0 0 20px 0;
+    }
+
+    .project-example-img-landscape {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-example-img-portrait {
+        width: 150px;
+        height: auto;
+    }
+}

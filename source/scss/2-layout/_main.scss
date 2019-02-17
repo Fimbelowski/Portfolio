@@ -17,3 +17,11 @@ main {
     box-shadow: 5px 0 20px rgba(0, 0, 0, 0.15),
                 -5px 0 20px rgba(0, 0, 0, 0.15);
 }
+
+@mixin main--mobile() {
+    .main-inner {
+        width: 100%;
+        padding: 10px 20px;
+        box-shadow: none;
+    }
+}

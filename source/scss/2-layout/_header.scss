@@ -25,3 +25,9 @@ header {
     font-size: 1.4rem;
     margin: 0;
 }
+
+@mixin header--mobile() {
+    header {
+        display: none;
+    }
+}

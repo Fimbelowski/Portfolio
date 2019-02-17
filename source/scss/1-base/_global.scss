@@ -34,3 +34,13 @@ a {
     color: $primary-300;
     text-decoration: underline;
 }
+
+strong {
+    color: $primary-300;
+}
+
+@mixin global--mobile() {
+    html {
+        font-size: 20px;
+    }
+}
