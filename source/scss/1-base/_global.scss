@@ -25,6 +25,11 @@ p, button, figcaption {
     font-family: $body-font;
 }
 
+p {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+}
+
 a {
     color: $primary-300;
     text-decoration: underline;
