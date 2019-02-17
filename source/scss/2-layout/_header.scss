@@ -14,7 +14,14 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
-    width: 700px;
+    width: 1150px;
     height: 100%;
+    padding: 0 25px;
+}
+
+.header-text {
+    font-size: 1.4rem;
+    margin: 0;
 }
