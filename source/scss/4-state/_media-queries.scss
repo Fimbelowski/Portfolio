@@ -1,4 +1,4 @@
-@media(min-width: #{$breakpoint-mobile}) {
+@media(min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1}) {
     // Base
     @include global--mobile();
 
@@ -11,6 +11,4 @@
     // Modules
     @include section--mobile();
     @include project--mobile();
-
-    // State
 }
