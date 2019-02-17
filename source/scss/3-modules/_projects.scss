@@ -1,0 +1,50 @@
+.project-container {
+    padding: 0 25px;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.project-title {
+    font-size: 3rem;
+    margin: 0 15px;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+.project-title-decoration {
+    flex: 1;
+    color: black;
+}
+
+.project-examples-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    float: right;
+}
+
+.project-example {
+    float: right;
+    clear: right;
+    text-align: center;
+    margin: 0 0 30px 30px;
+}
+
+.project-example-img-landscape {
+    width: auto;
+    height: 300px;
+}
+
+.project-example-img-portrait {
+    width: 200px;
+    height: auto;
+}
+
+.project-body-text {
+    font-size: 1.25rem;
+}
